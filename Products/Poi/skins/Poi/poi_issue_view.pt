@@ -159,10 +159,10 @@
     </form>
     <div class="issue-details" tal:content="structure here/getTaggedDetails" />
 
-    <dl class="steps-to-reproduce" tal:define="steps here/getTaggedSteps" tal:condition="nocall:steps">
+    <!--dl class="steps-to-reproduce" tal:define="steps here/getTaggedSteps" tal:condition="nocall:steps">
       <dt i18n:translate="poi_label_steps">Steps to reproduce:</dt>
       <dd tal:content="structure steps" />
-    </dl>
+    </dl-->
 
     <div class="issue-attachment" tal:condition="python:here.getAttachment().get_size() &gt; 0">
       <div class="issue-attachment-label" i18n:translate="poi_label_attachment">Attached:</div>

@@ -65,7 +65,7 @@ msgid "No change"
 msgstr "Nenhuma alteração"
 
 msgid "Only members can submit"
-msgstr ""
+msgstr "Somente os membros podem enviar"
 
 msgid "Open"
 msgstr "Aberto"

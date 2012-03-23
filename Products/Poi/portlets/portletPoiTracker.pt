@@ -59,7 +59,7 @@
 			<div id="open-issues-by-state" class="issue-quick-search-box"
 				 tal:condition="python: not ussuesContent and altenticado">
 		      <br />
-			  <h3>Não a requisições abertas </h3>
+			  <h3>Não a requisições em aberto </h3>
 		      
 		    </div>
 			

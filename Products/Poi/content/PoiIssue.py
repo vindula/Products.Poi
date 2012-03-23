@@ -307,6 +307,10 @@ PoiIssue_schema = BaseFolderSchema.copy() + \
     schema.copy()
 PoiIssue_schema.moveField('subject', after='watchers')
 
+invisivel = {'view':'invisible','edit':'invisible',}
+PoiIssue_schema['steps'].widget.visible = invisivel
+PoiIssue_schema['subject'].widget.visible = invisivel
+
 
 class PoiIssue(BaseFolder, BrowserDefaultMixin):
     """The default tracker

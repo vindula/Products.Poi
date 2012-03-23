@@ -177,7 +177,7 @@ msgstr "Versão prevista para a correção desta requisição"
 # ./content/PoiTracker.py
 #: ./content/PoiTracker.py:209
 msgid "Poi_help_technicians"
-msgstr ""
+msgstr "Digite os ids dos usuários que serão responsáveis ​​pela resolução dos problemas, um por linha. Note-se que ter somente gerentes e técnicos não é bom: os gestores podem resolver problemas muito."
 
 #: ./content/PoiTracker.py:71
 msgid "Poi_help_tracker_description"
@@ -313,7 +313,7 @@ msgstr "Versão"
 # ./content/PoiTracker.py
 #: ./content/PoiTracker.py:207
 msgid "Poi_label_technicians"
-msgstr ""
+msgstr "Técnicos do Gerenciador "
 
 #: ./content/PoiTracker.py:69
 msgid "Poi_label_tracker_description"
@@ -511,11 +511,11 @@ msgstr "Todas as tarefas pendentes"
 
 #: ./browser/notifications.py:190
 msgid "poi_attachment_added"
-msgstr ""
+msgstr "Um anexo foi adicionado com id ${attachment_id}"
 
 #: ./browser/notifications.py:286
 msgid "poi_email_issue_resolved_subject_template"
-msgstr ""
+msgstr "[${tracker_title}] Resolvido # ${issue_id} - ${issue_title} "
 
 #: ./browser/notifications.py:256
 msgid "poi_email_issue_resolved_template"
@@ -535,7 +535,7 @@ msgstr ""
 
 #: ./browser/notifications.py:117
 msgid "poi_email_new_issue_subject_template"
-msgstr ""
+msgstr "[${tracker_title}] #${issue_id} - nova edição: ${issue_title}"
 
 #: ./browser/notifications.py:84
 msgid "poi_email_new_issue_template"
