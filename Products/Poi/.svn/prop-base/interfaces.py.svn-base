@@ -1,0 +1,12 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 337
+/Products.Poi/branches/maurits-collective.watcherlist/Products/Poi/interfaces.py:107902-111863
+/Products.Poi/branches/maurits-old-responses-cleanup/Products/Poi/interfaces/__init__.py:86612,86628
+/Products.Poi/branches/maurits-old-responses-cleanup/interfaces/__init__.py:86628
+/Products.Poi/trunk/Products/Poi/interfaces.py:58030-100275
+END
