@@ -8,6 +8,7 @@ from zope import schema
 from Products.Poi import PoiMessageFactory as _
 from plone.app.vocabularies.catalog import SearchableTextSourceBinder
 from plone.app.form.widgets.uberselectionwidget import UberSelectionWidget
+from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
 
 from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.portlets.portlets import base
@@ -25,6 +26,12 @@ class IPortletPortletPoiTracker(IPortletDataProvider):
     title_portlet = schema.TextLine(title=_(u"Título"),
                                   description=_(u"Título que aparecerá no cabeçalho do portlet."),
                                   required=True)
+    
+    
+    description = schema.Text(title=unicode("Descrição", 'utf-8'),
+                              description=unicode("Adicione uma descrição para os usuarios sobre mais informações para adição de ocorrências", 'utf-8'),
+                              required=False)
+    
     
     poi_tracker = schema.Choice(title=_(u"Gerenciador de Ocorrências"),
                                 description=_(u"Selecione o gerenciador de ocorrências, onde serão adicionadas as ocorrêcias."),
@@ -92,7 +99,7 @@ class AddForm(base.AddForm):
     
     form_fields = form.Fields(IPortletPortletPoiTracker)
     form_fields['poi_tracker'].custom_widget = UberSelectionWidget
-    
+    form_fields['description'].custom_widget = WYSIWYGWidget
     def create(self, data):
        return Assignment(**data)
    
@@ -104,3 +111,4 @@ class EditForm(base.EditForm):
     """
     form_fields = form.Fields(IPortletPortletPoiTracker)
     form_fields['poi_tracker'].custom_widget = UberSelectionWidget
+    form_fields['description'].custom_widget = WYSIWYGWidget

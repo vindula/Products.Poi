@@ -2,7 +2,7 @@
 <object name="PoiPscTracker"
    meta_type="Factory-based Type Information with dynamic views"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title">Issue Tracker</property>
+ <property name="title">Issue Tracker PSC</property>
  <property name="description">Version of the PoiTracker which supports the
       PloneSoftwareCenter. Intended to be added inside a PSCProject.
       </property>

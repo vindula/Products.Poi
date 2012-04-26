@@ -19,7 +19,7 @@
 			
 			<input type="hidden" value="PoiIssue" name="type_name">
 			<div class="formControls">
-				<input type="submit" value="Submeter nova requisição " class="context">
+				<input type="submit" value="Submeter nova requisição " class="context" style="width: 170px;">
 			</div>
 			
 		</form>
@@ -31,7 +31,7 @@
 						issueStates obj/getIssueWorkflowStates;
 						ussuesContent obj/objectValues|nothing">
 				  	
-		    <div id="open-issues-by-state" class="issue-quick-search-box"
+		    <div id="open-issues-by-state" 
 		         tal:define="issueStates obj/getIssueWorkflowStates;"
 				 tal:condition="python: ussuesContent and altenticado">
 		      <br />
@@ -56,7 +56,7 @@
 		      </ul>
 		    </div>
 			
-			<div id="open-issues-by-state" class="issue-quick-search-box"
+			<div id="open-issues-by-state"
 				 tal:condition="python: not ussuesContent and altenticado">
 		      <br />
 			  <h3>Não a requisições em aberto </h3>
