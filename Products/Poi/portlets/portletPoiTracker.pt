@@ -29,7 +29,7 @@
                   								 (obj.absolute_url(), '&amp;state='.join(openStates),);
 						issuefolder obj/@@issuefolder;
 						issueStates obj/getIssueWorkflowStates;
-						ussuesContent obj/objectValues|nothing">
+						ussuesContent python:issuefolder.getMyIssues(openStates=openStates)">
 				  	
 		    <div id="open-issues-by-state" 
 		         tal:define="issueStates obj/getIssueWorkflowStates;"
@@ -37,13 +37,13 @@
 		      <br />
 			  <h3>Status das requisições</h3>
 		      <ul>
-		        <li tal:define="issues python:issuefolder.getFilteredIssues(state=openStates)">
+		        <li tal:define="issues python:issuefolder.getMyIssues(openStates=openStates)">
 		          <a tal:attributes="href string:${issueQueryString}"
 		             i18n:translate="poi_all_pending_issues">All pending issues</a> (<span tal:replace="python:len(issues)" />)
 		        </li>
 		        <tal:releases repeat="state issueStates">
 		          <tal:block condition="python:state not in ignoredStates">
-		            <li tal:define="issues python:issuefolder.getFilteredIssues(state=state);
+		            <li tal:define="issues python:issuefolder.getMyIssues(openStates=state);
 									cont_issues python:len(issues) or 0"
 						tal:condition="python: cont_issues !=0">
 		              <a tal:attributes="href string:${obj/absolute_url}/poi_issue_search?state=${state}"
@@ -55,7 +55,6 @@
 		        </tal:releases>
 		      </ul>
 		    </div>
-			
 			<div id="open-issues-by-state"
 				 tal:condition="python: not ussuesContent and altenticado">
 		      <br />
