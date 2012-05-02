@@ -123,6 +123,35 @@ class IssueFolderView(BrowserView):
                 issues.append(i)
 
         return issues
+    
+    def getMyIssues_Creators(self, openStates=['open', 'in-progress'],
+                             memberId=None, manager=False):
+        context = aq_inner(self.context)
+        if not memberId:
+            mtool = getToolByName(context, 'portal_membership')
+            member = mtool.getAuthenticatedMember()
+            memberId = member.getId()
+        
+        if manager:
+            if 'unconfirmed' not in openStates:
+                openStates += ['unconfirmed']
+
+        pc = getToolByName(self.context, 'portal_catalog')
+        issues = pc(path={'query':'/'.join(context.getPhysicalPath())},
+                        portal_type='PoiIssue',
+                        review_state=openStates,
+                        Creator=memberId)
+        return issues
+
+
+
+
+
+
+
+
+
+
 
     def getOrphanedIssues(self, openStates=['open', 'in-progress'],
                           memberId=None):

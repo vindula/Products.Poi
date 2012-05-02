@@ -25,11 +25,11 @@
 		</form>
 		
 		<tal:def define="obj view/getObjectPoi|nothing;
-						 issueQueryString python:'%s/poi_issue_search?state=%s' %
-                  								 (obj.absolute_url(), '&amp;state='.join(openStates),);
+						 issueQueryString python:'%s/poi_issue_search?state=%s&creator=%s' %
+                  								 (obj.absolute_url(), '&amp;state='.join(openStates),member.getId(),);
 						issuefolder obj/@@issuefolder;
 						issueStates obj/getIssueWorkflowStates;
-						ussuesContent python:issuefolder.getMyIssues(openStates=openStates)">
+						ussuesContent python:issuefolder.getMyIssues_Creators(openStates=openStates)">
 				  	
 		    <div id="open-issues-by-state" 
 		         tal:define="issueStates obj/getIssueWorkflowStates;"
@@ -37,16 +37,16 @@
 		      <br />
 			  <h3>Status das requisições</h3>
 		      <ul>
-		        <li tal:define="issues python:issuefolder.getMyIssues(openStates=openStates)">
+		        <li tal:define="issues python:issuefolder.getMyIssues_Creators(openStates=openStates)">
 		          <a tal:attributes="href string:${issueQueryString}"
 		             i18n:translate="poi_all_pending_issues">All pending issues</a> (<span tal:replace="python:len(issues)" />)
 		        </li>
 		        <tal:releases repeat="state issueStates">
 		          <tal:block condition="python:state not in ignoredStates">
-		            <li tal:define="issues python:issuefolder.getMyIssues(openStates=state);
+		            <li tal:define="issues python:issuefolder.getMyIssues_Creators(openStates=state);
 									cont_issues python:len(issues) or 0"
 						tal:condition="python: cont_issues !=0">
-		              <a tal:attributes="href string:${obj/absolute_url}/poi_issue_search?state=${state}"
+		              <a tal:attributes="href string:${obj/absolute_url}/poi_issue_search?state=${state}&creator=${member/getId}"
 		                 i18n:translate=""
 		                 i18n:domain="plone"
 		                 tal:content="python:issueStates.getValue(state)" /> (<span tal:replace="python:len(issues)" />)
