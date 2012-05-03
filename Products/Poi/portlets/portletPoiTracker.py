@@ -53,10 +53,10 @@ class Assignment(base.Assignment):
     poi_tracker = None
     
     # TODO: Add keyword parameters for configurable parameters here
-    def __init__(self, title_portlet=u'', poi_tracker=None):
+    def __init__(self, title_portlet=u'', poi_tracker=None,description=u''):
        self.title_portlet = title_portlet
        self.poi_tracker = poi_tracker
-       
+       self.description = description
 
     @property
     def title(self):
@@ -100,6 +100,7 @@ class AddForm(base.AddForm):
     form_fields = form.Fields(IPortletPortletPoiTracker)
     form_fields['poi_tracker'].custom_widget = UberSelectionWidget
     form_fields['description'].custom_widget = WYSIWYGWidget
+    
     def create(self, data):
        return Assignment(**data)
    
