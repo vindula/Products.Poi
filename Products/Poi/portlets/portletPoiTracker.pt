@@ -58,7 +58,7 @@
 			<div id="open-issues-by-state"
 				 tal:condition="python: not ussuesContent and altenticado">
 		      <br />
-			  <h3>Não a requisições em aberto </h3>
+			  <h3>Não ha requisições em aberto </h3>
 		      
 		    </div>
 			
