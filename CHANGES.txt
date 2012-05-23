@@ -7,3 +7,7 @@ Changelog
 1.1 - 2012-04-27
 --------------------
  - Ajustes no portlet PoiTracker para listar so os tickets do usuario logado
+ 
+1.1.1 - 2012-05-23
+--------------------
+ - Correções de ortografia no porduto
