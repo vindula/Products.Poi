@@ -63,7 +63,7 @@ class Assignment(base.Assignment):
         """This property is used to give the title of the portlet in the
         "manage portlets" screen.
         """
-        return "Portlet Manage Ocorrência"
+        return "Portlet Gerenciar Ocorrências"
     
 class Renderer(base.Renderer):
     """Portlet renderer.

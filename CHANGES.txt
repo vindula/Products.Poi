@@ -11,3 +11,8 @@ Changelog
 1.1.1 - 2012-05-23
 --------------------
  - Correções de ortografia no porduto
+ 
+1.1.2 - 2012-05-28
+--------------------
+- Correções de ortografia no porduto
+- Ajustes no layout do cabeçado do portlet  
