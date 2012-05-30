@@ -6,8 +6,8 @@
     	
 	<portlet
 		addview="Products.Poi.PortletPoiTracker"
-		title="Portlet Manage Ocorrência"
-		description="Portlet Manage Ocorrência"
+		title="Portlet Gerenciar Ocorrências"
+		description="Portlet Gerenciar Ocorrências"
 	    />		
 
 </portlets>
