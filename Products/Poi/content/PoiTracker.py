@@ -33,6 +33,7 @@ from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 from Products.DataGridField.DataGridField import DataGridField
 from Products.DataGridField.DataGridWidget import DataGridWidget
 from zope.interface import implements
+from collective.watcherlist.interfaces import IWatcherList
 try:
     from Products.LinguaPlone import public as atapi
     atapi  # pyflakes
