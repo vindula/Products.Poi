@@ -33,6 +33,7 @@ from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 from Products.DataGridField.DataGridField import DataGridField
 from Products.DataGridField.DataGridWidget import DataGridWidget
 from zope.interface import implements
+from collective.watcherlist.interfaces import IWatcherList
 try:
     from Products.LinguaPlone import public as atapi
     atapi  # pyflakes
@@ -403,6 +404,9 @@ class PoiTracker(atapi.BaseBTreeFolder, BrowserDefaultMixin):
         TrackerManager local role.
         """
         self._updateRolesField('managers', managers)
+        #Customizando set do collective.watchers para enviar e-mails dos usuarios setados no campo "Administradores do Gerenciador"
+        watchers = IWatcherList(self, None)
+        watchers._WatcherList__set_watchers(managers)
 
     security.declareProtected(
         permissions.ModifyPortalContent, 'setTechnicians')
@@ -411,6 +415,9 @@ class PoiTracker(atapi.BaseBTreeFolder, BrowserDefaultMixin):
         Technician local role.
         """
         self._updateRolesField('technicians', technicians)
+        #Customizando set do collective.watchers para enviar e-mails dos usuarios setados no campo "Técnicos do Gerenciador"
+        watchers = IWatcherList(self, None)
+        watchers._WatcherList__set_watchers(technicians)
 
     security.declarePublic('getIssueWorkflowStates')
     def getIssueWorkflowStates(self):
