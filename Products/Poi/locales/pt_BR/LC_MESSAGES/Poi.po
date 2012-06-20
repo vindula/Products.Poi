@@ -150,7 +150,7 @@ msgstr "Selecione qual o gerente, se existir, é responsável por esta requisiç
 
 #: ./content/PoiTracker.py:225
 msgid "Poi_help_sendNotificationEmails"
-msgstr "Se selecionado, gerentes de requisiçãos receberão um email a cada vez que uma nova requisição ou resposta for criada, e os criadores de requisiçãos receberão uma mensagem quando tiver uma nova resposta e quando uma requisição for resolvida e estiver aguardando confirmação."
+msgstr "Se selecionado, gerentes de requisições receberão um email a cada vez que uma nova requisição ou resposta for criada, e os criadores de requisições receberão uma mensagem quando tiver uma nova resposta e quando uma requisição for resolvida e estiver aguardando confirmação."
 
 #: ./content/PoiIssue.py:206
 msgid "Poi_help_severity"
@@ -167,7 +167,7 @@ msgstr "Rótulos podem ser usado para adicionar categorias arbitrárias às requ
 # ./content/PoiTracker.py
 #: ./content/PoiTracker.py:261
 msgid "Poi_help_svnurl"
-msgstr "Por favor informe a URL do repositório SVN relativo a este gerenciador. ex.http://dev.plone.org/collective/changeset/%(rev)s para produtos no collective do Plone."
+msgstr "Por favor informe a URL do repositório SVN relativo a este gerenciador. Ex: http://dev.plone.org/collective/changeset/%(rev)s para produtos no collective do Plone."
 
 # ./content/PoiIssue.py
 #: ./content/PoiIssue.py:222
@@ -177,7 +177,7 @@ msgstr "Versão prevista para a correção desta requisição"
 # ./content/PoiTracker.py
 #: ./content/PoiTracker.py:209
 msgid "Poi_help_technicians"
-msgstr "Digite os ids dos usuários que serão responsáveis ​​pela resolução dos problemas, um por linha. Note-se que ter somente gerentes e técnicos não é bom: os gestores podem resolver problemas muito."
+msgstr "Digite os ids dos usuários que serão responsáveis ​​pela resolução dos problemas, um por linha. Note-se que ter somente gerentes e técnicos não é bom: os gestores podem resolver muitos problemas."
 
 #: ./content/PoiTracker.py:71
 msgid "Poi_help_tracker_description"
@@ -614,7 +614,7 @@ msgstr "Detalhes da resposta"
 
 #: ./skins/Poi/poi_issue_search.pt:34
 msgid "poi_heading_search_results"
-msgstr "Resultado da busca de requisiçãos"
+msgstr "Resultados da busca de requisições"
 
 #: ./skins/Poi/poi_tracker_view.pt:205
 msgid "poi_heading_unconfirmed_issues"
