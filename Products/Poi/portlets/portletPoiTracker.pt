@@ -11,14 +11,10 @@
     <!--dt class="portletHeader">
         <span class="tile" tal:content="view/get_title">Portlet Title</span>
     </dt-->
-    <dt class="portletHeader-dainamic">
-        <div class="topPortlet"></div>
-		<div class="meioPortlet">
-			<span class="portletTopLeft"></span>
-	        <span class="tile" tal:content="view/get_title">Portlet Title</span>
-	        <span class="portletTopRight"></span>	
-		</div>
-		<div class="bottonPortlet"></div>
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span class="tile" tal:content="view/get_title">Portlet Title</span>
+		<span class="portletTopRight"></span>
     </dt>
     
     
