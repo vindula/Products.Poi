@@ -77,6 +77,9 @@ class Renderer(base.Renderer):
     def get_title(self):
         return self.data.title_portlet
     
+    def get_description(self):
+        return self.data.description
+    
     def get_tracker(self):
         return self.data.poi_tracker
     

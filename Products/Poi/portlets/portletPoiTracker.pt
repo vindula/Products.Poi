@@ -23,6 +23,12 @@
     
     
     <dd class="portletItem" >
+        
+        <div>
+            <p tal:replace="structure view/get_description"></p>
+            
+        </div>
+        <br />
 		<p>Clique no botão a baixo para criar uma nova requisição</p>		
 			
 		<form id="poi-submit-new-issue-form" method="post" enctype="multipart/form-data"
