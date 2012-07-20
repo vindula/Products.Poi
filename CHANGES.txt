@@ -24,3 +24,7 @@ Changelog
 1.1.4 - 2012-06-25
 --------------------
 - Adição do campo decrição do portlet a sua visualização
+
+1.1.5 - 2012-07-20
+--------------------
+- Correção ortográfica na tradução

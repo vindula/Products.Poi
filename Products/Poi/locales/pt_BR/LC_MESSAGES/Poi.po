@@ -589,7 +589,7 @@ msgstr "Por rótulo"
 
 #: ./skins/Poi/poi_issue_search_form.pt:19
 msgid "poi_heading_issue_search"
-msgstr "Buscar requisição"
+msgstr "Busca avançada de requisições"
 
 #: ./browser/log.pt:19
 msgid "poi_heading_log"
@@ -598,7 +598,6 @@ msgstr "Log do gerenciador"
 #: ./skins/Poi/poi_tracker_view.pt:236
 msgid "poi_heading_my_issues"
 msgstr "Minhas Ocorrências"
-
 
 #: ./skins/Poi/poi_tracker_view.pt:119
 msgid "poi_heading_open_issues"
@@ -634,7 +633,7 @@ msgstr "As seguintes requisiçãos abertas foram enviadas por você."
 
 #: ./skins/Poi/poi_tracker_view.pt:123
 msgid "poi_help_open_issues"
-msgstr "Escolha uma área, versão ou situação da requisição para ver todas as requisiçãos abertas nessa categoria. Para opções mais avançadas de pesquisa. selecione \"Busca de requisiçãos\"."
+msgstr "Escolha uma área, versão ou situação das requisições para ver todas as requisições abertas nessa categoria. Para opções mais avançadas de pesquisa, selecione Busca avançada de requisições."
 
 #: ./skins/Poi/poi_tracker_view.pt:271
 msgid "poi_help_orphaned_issues_"
@@ -642,15 +641,15 @@ msgstr "As seguintes requisiçãos não possuem um responsável definido."
 
 #: ./skins/Poi/poi_tracker_view.pt:206
 msgid "poi_help_unconfirmed_issues"
-msgstr "As requisiçãos seguintes não foram ainda confirmadas ou designadas. Por favor revise-as e tome a ação apropriada."
+msgstr "As requisições seguintes ainda não foram confirmadas ou designadas. Por favor revise-as e tome a ação apropriada."
 
 #: ./skins/Poi/poi_tracker_view.pt:39
 msgid "poi_issue_search"
-msgstr "Busca avançada de requisiçãos"
+msgstr "Busca avançada de requisições"
 
 #: ./skins/Poi/poi_issue_search_form.pt:27
 msgid "poi_issue_search_description"
-msgstr "Este formulário permite que você busque requisiçãos de acordo com uma variedade de critérios. Por favor faça a sua seleção abaixo e cilque em Buscar."
+msgstr "Este formulário permite que você busque requisiçãos de acordo com uma variedade de critérios. Por favor faça a sua seleção abaixo e clique em Buscar."
 
 #: ./skins/Poi/poi_issue_view.pt:66
 msgid "poi_label_area"
