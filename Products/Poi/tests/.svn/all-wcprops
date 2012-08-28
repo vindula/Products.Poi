@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/collective/!svn/ver/245126/Products.Poi/trunk/Products/Poi/tests
+END
+testIssue.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/testIssue.py
+END
+test_migration.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/test_migration.py
+END
+testPscIntegration.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/testPscIntegration.py
+END
+testTracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/testTracker.py
+END
+migration_issue_description.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/collective/!svn/ver/111864/Products.Poi/trunk/Products/Poi/tests/migration_issue_description.txt
+END
+upgrade_steps.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/collective/!svn/ver/112441/Products.Poi/trunk/Products/Poi/tests/upgrade_steps.txt
+END
+testResponse.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/testResponse.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/collective/!svn/ver/107678/Products.Poi/trunk/Products/Poi/tests/__init__.py
+END
+testSetup.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/245122/Products.Poi/trunk/Products/Poi/tests/testSetup.py
+END
+migration_workflow_changes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/collective/!svn/ver/111864/Products.Poi/trunk/Products/Poi/tests/migration_workflow_changes.txt
+END
+migration_old_responses_original.txt
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/collective/!svn/ver/111864/Products.Poi/trunk/Products/Poi/tests/migration_old_responses_original.txt
+END
+responses.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/237307/Products.Poi/trunk/Products/Poi/tests/responses.txt
+END
+testNotifications.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/245125/Products.Poi/trunk/Products/Poi/tests/testNotifications.py
+END
+browser.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/collective/!svn/ver/119326/Products.Poi/trunk/Products/Poi/tests/browser.txt
+END
+migration_old_responses_alternative.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/collective/!svn/ver/111864/Products.Poi/trunk/Products/Poi/tests/migration_old_responses_alternative.txt
+END
+test_unit.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/245126/Products.Poi/trunk/Products/Poi/tests/test_unit.py
+END
+test_browser.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/test_browser.py
+END
+linkdetection.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/collective/!svn/ver/100261/Products.Poi/trunk/Products/Poi/tests/linkdetection.txt
+END
+testFeeds.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/testFeeds.py
+END
+ptc.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/tests/ptc.py
+END

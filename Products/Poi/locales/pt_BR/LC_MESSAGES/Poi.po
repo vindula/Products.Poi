@@ -1,0 +1,846 @@
+# translation of poi-pt-br.po to Portugues Brasileiro
+# pot file for Poi Issue Tracker product.
+# Erico Andrei <erico@simplesconsultoria.com.br>, 2009
+# Rafahela Bazzanella <rafabazzanella@yahoo.com.br>, 2007.
+# Paulo Fernandes de Souza Jr. <pasouza@gmail.com>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: poi-pt-br\n"
+"POT-Creation-Date: 2011-10-05 23:28+0000\n"
+"PO-Revision-Date: 2009-07-22 20:21-0300\n"
+"Last-Translator: Erico Andrei <erico@simplesconsultoria.com.br>\n"
+"Language-Team: Simples Consultoria <contato@simplesconsultoria.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: pt-br\n"
+"Language-Name: Portugues Brasileiro\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: Poi\n"
+
+#: ./browser/response.py:512
+msgid "Changes saved to response id ${response_id}."
+msgstr "Alterações salvas para a resposta com id ${response_id}"
+
+#: ./browser/response.pt:30
+msgid "Delete"
+msgstr "Apagar"
+
+#: ./browser/response.pt:20
+msgid "Edit"
+msgstr "Editar"
+
+#: ./skins/Poi/poi_issue_view.pt:175
+msgid "Edit issue"
+msgstr "Editar requisição"
+
+#: ./browser/response.py:408
+msgid "Issue state"
+msgstr "Estado da requisição"
+
+#: ./browser/response.py:540
+msgid "No response selected for removal."
+msgstr "Nenhuma resposta selecionada para remoção."
+
+#: ./browser/response.py:498
+msgid "No response selected for saving."
+msgstr "Nenhuma resposta selecionada para salvamento."
+
+#: ./browser/response.py:202
+msgid "No response selected."
+msgstr "Nenhuma resposta selecionada."
+
+#: ./browser/response.py:452
+msgid "No response text added and no issue changes made."
+msgstr "Não foi adicionado um texto à resposta e nenhuma alteração foi realizada na requisição."
+
+#: ./content/PoiIssue.py:488
+msgid "None"
+msgstr "Ninguém"
+
+#: ./content/PoiIssue.py:176
+msgid "Poi_help_area"
+msgstr "Selecione a área a qual esta requisição se refere."
+
+#: ./browser/response.pt:151
+#: ./content/PoiIssue.py:161
+msgid "Poi_help_attachment"
+msgstr "Você pode, opcionalmente, anexar um arquivo a sua requisição. Por favor não adicione desnecessariamente arquivos grandes."
+
+#: ./content/PoiTracker.py:111
+msgid "Poi_help_availableAreas"
+msgstr "Informe os tópicos/áreas de requisiçãos para este gerenciador, uma especificação por linha. O formato é 'NomeCurto | Título | Descrição'. "
+
+#: ./content/PoiTracker.py:136
+msgid "Poi_help_availableIssueTypes"
+msgstr "Informe os tipos de requisiçãos para este gerenciador, uma especificação por linha. O formato é 'NomeCurto | Título | Descrição'. "
+
+#: ./content/PoiTracker.py:180
+msgid "Poi_help_availableReleases"
+msgstr "Informe as versões as quais as requisiçãos podem ser relacionadas, uma por linha. Se nenhuma versão for informada, as requisição não serão organizadas por versão."
+
+#: ./content/PoiTracker.py:152
+msgid "Poi_help_availableSeverities"
+msgstr "Informe os valores distintos possíveis para a gravidade das requisiçãos, um por linha."
+
+#: ./content/PoiIssue.py:256
+msgid "Poi_help_contactEmail"
+msgstr "Opcionalmente, informe um endereço de email pelo qual você pode ser encontrado para informações adicionais ou quando uma solução estiver disponível."
+
+#: ./content/PoiTracker.py:166
+msgid "Poi_help_defaultSeverity"
+msgstr "Selecione a gravidade padrão para novas requisiçãos."
+
+#: ./content/PoiIssue.py:125
+msgid "Poi_help_details"
+msgstr "Por favor, informe detalhes adicionais."
+
+# ./content/PoiTracker.py
+#: ./content/PoiTracker.py:87
+msgid "Poi_help_helpText"
+msgstr "Digite uma mensagem introdutória a ser exibida na página inicial do gerenciador de requisiçãos."
+
+#: ./browser/response.pt:176
+msgid "Poi_help_issueTransition"
+msgstr "Selecione a troca de situação da requisição a que esta resposta se refere, se aplicável."
+
+#: ./content/PoiIssue.py:191
+msgid "Poi_help_issueType"
+msgstr "Selecione o tipo de requisição."
+
+#: ./content/PoiIssue.py:92
+msgid "Poi_help_issue_title"
+msgstr "Informe um título curto e descritivo para a requisição. Um bom título facilitará a identificação e resposta da requisição pelo responsável pelo projeto."
+
+#: ./content/PoiTracker.py:242
+msgid "Poi_help_mailingList"
+msgstr "Se informado, e se \"Enviar emails de notificação\" estiver selecionado, um email será enviado para este endereço cada vez que uma nova requisição ou resposta for criada. Se não for informado um endereço de lista, os responsáveis receberão emails individuais."
+
+#: ./content/PoiTracker.py:195
+msgid "Poi_help_managers"
+msgstr "Informe a idendificação dos usuários que terão permissão de administrar este gerenciador, um por linha."
+
+# ./content/PoiResponse.py
+#: ./browser/response.pt:266
+msgid "Poi_help_newResponsibleManager"
+msgstr "Escolha o responsável por esta requisição"
+
+# ./content/PoiResponse.py
+#: ./browser/response.pt:209
+msgid "Poi_help_newSeverity"
+msgstr "Escolha a severidade desta requisição"
+
+# ./content/PoiResponse.py
+#: ./browser/response.pt:237
+msgid "Poi_help_newTargetRelease"
+msgstr "Informe a versão que corrigirá esta requisição"
+
+#: ./content/PoiIssue.py:110
+msgid "Poi_help_release"
+msgstr "Selecione a versão a que esta requisição pertence."
+
+#: ./browser/response.pt:111
+msgid "Poi_help_response"
+msgstr "Por favor, informe a sua resposta abaixo."
+
+#: ./content/PoiIssue.py:238
+msgid "Poi_help_responsibleManager"
+msgstr "Selecione qual o gerente, se existir, é responsável por esta requisição. "
+
+#: ./content/PoiTracker.py:225
+msgid "Poi_help_sendNotificationEmails"
+msgstr "Se selecionado, gerentes de requisições receberão um email a cada vez que uma nova requisição ou resposta for criada, e os criadores de requisições receberão uma mensagem quando tiver uma nova resposta e quando uma requisição for resolvida e estiver aguardando confirmação."
+
+#: ./content/PoiIssue.py:206
+msgid "Poi_help_severity"
+msgstr "Selecione a gravidade desta requisição."
+
+#: ./content/PoiIssue.py:142
+msgid "Poi_help_steps"
+msgstr "Se aplicável, por favor informe os passos necessários para reproduzir o erro ou identificar a requisição, um por linha."
+
+#: ./content/PoiIssue.py:290
+msgid "Poi_help_subject"
+msgstr "Rótulos podem ser usado para adicionar categorias arbitrárias às requisiçãos. A lista abaixo mostra rótulos existentes que você pode selecionar, ou você pode adicionar algum novo."
+
+# ./content/PoiTracker.py
+#: ./content/PoiTracker.py:261
+msgid "Poi_help_svnurl"
+msgstr "Por favor informe a URL do repositório SVN relativo a este gerenciador. Ex: http://dev.plone.org/collective/changeset/%(rev)s para produtos no collective do Plone."
+
+# ./content/PoiIssue.py
+#: ./content/PoiIssue.py:222
+msgid "Poi_help_targetRelease"
+msgstr "Versão prevista para a correção desta requisição"
+
+# ./content/PoiTracker.py
+#: ./content/PoiTracker.py:209
+msgid "Poi_help_technicians"
+msgstr "Digite os ids dos usuários que serão responsáveis ​​pela resolução dos problemas, um por linha. Note-se que ter somente gerentes e técnicos não é bom: os gestores podem resolver muitos problemas."
+
+#: ./content/PoiTracker.py:71
+msgid "Poi_help_tracker_description"
+msgstr "Descreva o Propósito deste gerenciador"
+
+#: ./content/PoiTracker.py:57
+msgid "Poi_help_tracker_title"
+msgstr "Informe um nome que descreva este gerenciador."
+
+#: ./content/PoiIssue.py:273
+msgid "Poi_help_watchers"
+msgstr "Informe os nomes de usuário das pessoas que estão observando  esta requisição, um por linha. Estas pessoas receberão um email a cada vez que uma resposta for adicionada a esta requisição. Membros do portal podem eles mesmos se adicionarem como observadores."
+
+#: ./content/PoiIssue.py:174
+msgid "Poi_label_area"
+msgstr "Área"
+
+#: ./browser/response.pt:148
+#: ./content/PoiIssue.py:159
+msgid "Poi_label_attachment"
+msgstr "Anexo"
+
+#: ./content/PoiTracker.py:109
+msgid "Poi_label_availableAreas"
+msgstr "Áreas"
+
+#: ./content/PoiTracker.py:134
+msgid "Poi_label_availableIssueTypes"
+msgstr "Tipos de Ocorrências"
+
+#: ./content/PoiTracker.py:178
+msgid "Poi_label_availableReleases"
+msgstr "Versões Disponíveis"
+
+#: ./content/PoiTracker.py:150
+msgid "Poi_label_availableSeverities"
+msgstr "Gravidades Disponíveis"
+
+#: ./content/PoiIssue.py:254
+msgid "Poi_label_contactEmail"
+msgstr "Email para Contato"
+
+#: ./content/PoiTracker.py:164
+msgid "Poi_label_defaultSeverity"
+msgstr "Gravidade Padrão"
+
+#: ./content/PoiIssue.py:123
+msgid "Poi_label_details"
+msgstr "Detalhes"
+
+# ./content/PoiTracker.py
+#: ./content/PoiTracker.py:85
+msgid "Poi_label_helpText"
+msgstr "Texto de ajuda"
+
+#: ./browser/response.pt:171
+msgid "Poi_label_issueTransition"
+msgstr "Troca da Situação da Ocorrência"
+
+#: ./content/PoiIssue.py:189
+msgid "Poi_label_issueType"
+msgstr "Tipo da Ocorrência"
+
+#: ./content/PoiIssue.py:81
+msgid "Poi_label_issue_id"
+msgstr ""
+
+#: ./content/PoiIssue.py:90
+msgid "Poi_label_issue_title"
+msgstr "Título"
+
+#: ./content/PoiTracker.py:240
+msgid "Poi_label_mailingList"
+msgstr "Lista de Emails"
+
+#: ./content/PoiTracker.py:193
+msgid "Poi_label_managers"
+msgstr "Administradores do Gerenciador"
+
+# ./content/PoiResponse.py
+#: ./browser/response.pt:261
+msgid "Poi_label_newResponsibleManager"
+msgstr "Alterar o responsável"
+
+# ./content/PoiResponse.py
+#: ./browser/response.pt:204
+msgid "Poi_label_newSeverity"
+msgstr "Alterar a severidade da requisição"
+
+# ./content/PoiResponse.py
+#: ./browser/response.pt:232
+msgid "Poi_label_newTargetRelease"
+msgstr "Alterar a versão"
+
+#: ./content/PoiIssue.py:108
+msgid "Poi_label_release"
+msgstr "Versão"
+
+#: ./browser/response.pt:108
+msgid "Poi_label_response"
+msgstr "Resposta"
+
+#: ./content/PoiIssue.py:236
+msgid "Poi_label_responsibleManager"
+msgstr "Responsável"
+
+#: ./content/PoiTracker.py:223
+msgid "Poi_label_sendNotificationEmails"
+msgstr "Notificar por Emails"
+
+#: ./content/PoiIssue.py:204
+msgid "Poi_label_severity"
+msgstr "Gravidade"
+
+#: ./content/PoiIssue.py:140
+msgid "Poi_label_steps"
+msgstr "Passos para Reproduzir o Problema"
+
+#: ./content/PoiIssue.py:288
+msgid "Poi_label_subject"
+msgstr "Rótulos"
+
+# ./content/PoiTracker.py
+#: ./content/PoiTracker.py:259
+msgid "Poi_label_svnurl"
+msgstr "URL para o SVN"
+
+# ./content/PoiIssue.py
+#: ./content/PoiIssue.py:220
+msgid "Poi_label_targetRelease"
+msgstr "Versão"
+
+# ./content/PoiTracker.py
+#: ./content/PoiTracker.py:207
+msgid "Poi_label_technicians"
+msgstr "Técnicos do Gerenciador "
+
+#: ./content/PoiTracker.py:69
+msgid "Poi_label_tracker_description"
+msgstr "Descrição gerenciador"
+
+#: ./content/PoiTracker.py:55
+msgid "Poi_label_tracker_title"
+msgstr "Nome do Gerenciador"
+
+#: ./content/PoiIssue.py:271
+msgid "Poi_label_watchers"
+msgstr "Observadores da Ocorrência"
+
+#: ./browser/response.py:562
+msgid "Removed response id ${response_id}."
+msgstr "Removida a resposta com id ${response_id}"
+
+#: ./browser/response.py:502
+msgid "Response does not exist anymore; perhaps it was removed by another user."
+msgstr "Resposta não existe mais, talvez ele foi removido por um outro usuário."
+
+#: ./browser/response.py:555
+msgid "Response id ${response_id} does not exist so it cannot be removed."
+msgstr "A resposta com id ${response_id} não existe, portanto não poderia ser removida."
+
+#: ./browser/response.py:216
+msgid "Response id ${response_id} does not exist."
+msgstr "Resposta com id ${response_id} não existe."
+
+#: ./browser/response.py:583
+msgid "Response id ${response_id} has no attachment."
+msgstr "Resposta com id ${response_id} não possui nenhum anexo."
+
+#: ./browser/response.py:547
+msgid "Response id ${response_id} is no integer so it cannot be removed."
+msgstr "O id ${response_id} da resposta não é um número inteiro, portanto não pode ser removido;"
+
+#: ./browser/response.py:210
+msgid "Response id ${response_id} is no integer."
+msgstr "Id de resposta ${response_id} não é um número inteiro."
+
+#: ./browser/response.py:414
+msgid "Responsible manager"
+msgstr "Responsável"
+
+#. Default: "Search"
+#: ./skins/Poi/poi_tracker_view.pt:37
+msgid "Search"
+msgstr "Buscar"
+
+#: ./browser/response.py:413
+msgid "Severity"
+msgstr "Severidade"
+
+#: ./skins/Poi/poi_issue_view.pt:146
+msgid "Stop watching this issue"
+msgstr "Parar de Observar esta Ocorrência"
+
+#: ./skins/Poi/poi_tracker_view.pt:90
+msgid "Stop watching this tracker"
+msgstr "Pare de ver este rastreador"
+
+#: ./skins/Poi/poi_tracker_view.pt:62
+msgid "Submit new issue"
+msgstr "Submeter nova requisição "
+
+#: ./browser/response.py:439
+msgid "Target release"
+msgstr "Versão"
+
+#: ./skins/Poi/poi_issue_view.pt:152
+msgid "Watch this issue"
+msgstr "Observar a Ocorrência"
+
+#: ./skins/Poi/poi_tracker_view.pt:96
+msgid "Watch this tracker"
+msgstr "Assista a este rastreador"
+
+#: ./browser/response.py:534
+msgid "You are not allowed to delete responses."
+msgstr "Você não pode apagar respostas."
+
+#: ./browser/response.py:492
+msgid "You are not allowed to edit responses."
+msgstr "Você não pode editar respostas."
+
+#: ./skins/Poi/poi_issue_search.pt:47
+msgid "batch_x_items_matching_your_criteria"
+msgstr "${number} items obedecem a seu critério."
+
+#: ./skins/Poi/poi_tracker_view.pt:109
+msgid "description_cannot_add_issues_before_opened"
+msgstr "Outras pessoas não poderão enviar requisiçãos para este gerenciador enquanto você não abri-lo, utilizando a opção de menu 'estado' na barra contextual acima."
+
+#: ./skins/Poi/poi_issue_search.pt:43
+msgid "description_no_results_found"
+msgstr "Nenhum resultado foi encontrado."
+
+#: ./browser/edit_response.pt:38
+msgid "label_edit_response_not_allowed"
+msgstr "Você não pode editar esta resposta."
+
+#: ./skins/Poi/poi_tracker_view.pt:292
+msgid "label_powered_by"
+msgstr "Implementado com"
+
+#: ./browser/edit_response.pt:28
+msgid "label_return_to_issue"
+msgstr "Voltar à requisição"
+
+#: ./skins/Poi/poi_issue_search_results.pt:10
+#: ./skins/Poi/poi_tracker_view.pt:215
+msgid "label_rss_feed"
+msgstr "Alimentação RSS"
+
+#: ./skins/Poi/poi_issue_search_form.pt:261
+msgid "label_search"
+msgstr "Buscar"
+
+#: ./skins/Poi/poi_issue_search_results.pt:31
+msgid "listingheader_area"
+msgstr "Área"
+
+#: ./skins/Poi/poi_issue_search_results.pt:27
+msgid "listingheader_number"
+msgstr "#"
+
+#: ./skins/Poi/poi_issue_search_results.pt:29
+msgid "listingheader_release"
+msgstr "Versão"
+
+#: ./skins/Poi/poi_issue_search_results.pt:34
+msgid "listingheader_responsible"
+msgstr "Responsável"
+
+#: ./skins/Poi/poi_issue_search_results.pt:33
+msgid "listingheader_severity"
+msgstr "Gravidade"
+
+#: ./skins/Poi/poi_issue_search_results.pt:36
+msgid "listingheader_state"
+msgstr "Situação"
+
+#: ./skins/Poi/poi_issue_search_results.pt:35
+msgid "listingheader_tags"
+msgstr "Rótulos"
+
+#: ./skins/Poi/poi_issue_search_results.pt:28
+msgid "listingheader_title"
+msgstr "Título"
+
+#: ./skins/Poi/poi_issue_search_results.pt:32
+msgid "listingheader_type"
+msgstr "Tipo"
+
+#: ./skins/Poi/poi_tracker_view.pt:46
+msgid "login_suggestion"
+msgstr "Se for possível, por favor, se autentique antes de enviar esta requisição."
+
+#: ./browser/response.pt:87
+msgid "login_suggestion_response"
+msgstr "Se for possível, por favor, se autentique antes de enviar esta reação."
+
+#: ./browser/response.pt:79
+msgid "msg_no_responses_can_be_added"
+msgstr "Não é possível adicionar respostas."
+
+#: ./skins/Poi/poi_issue_search_form.pt:96
+msgid "not_assigned"
+msgstr "(Não designado)"
+
+#: ./browser/response.pt:39
+msgid "poi_added_by"
+msgstr "Adicionado por"
+
+#: ./browser/log.pt:83
+msgid "poi_added_days_ago"
+msgstr "Adicionado há ${count} dia(s)."
+
+#: ./browser/log.pt:76
+msgid "poi_added_hours_ago"
+msgstr "Adicionado há ${count} horas."
+
+#: ./browser/log.pt:69
+msgid "poi_added_minutes_ago"
+msgstr "Adicionado há ${count} minutos;"
+
+#: ./browser/response.pt:44
+msgid "poi_added_on"
+msgstr "em"
+
+#: ./skins/Poi/poi_tracker_view.pt:163
+msgid "poi_all_pending_issues"
+msgstr "Todas as tarefas pendentes"
+
+#: ./browser/notifications.py:190
+msgid "poi_attachment_added"
+msgstr "Um anexo foi adicionado com id ${attachment_id}"
+
+#: ./browser/notifications.py:286
+msgid "poi_email_issue_resolved_subject_template"
+msgstr "[${tracker_title}] Resolvido # ${issue_id} - ${issue_title} "
+
+#: ./browser/notifications.py:256
+msgid "poi_email_issue_resolved_template"
+msgstr ""
+"A requisição **${issue_title}** em **${tracker_title}**\n"
+"foi marcada como resolvida por **${response_author}**.\n"
+"Por favor visite a página com esta requisição e confirme se a solução foi satisfatória ou a re-abra.\n"
+"\n"
+"Dados da resposta\n"
+"--------------------\n"
+"\n"
+"Ocorrência\n"
+"  ${issue_title} (${issue_url})\n"
+"\n"
+"\n"
+"* Este é um e-mail automático, por favor não o responda - ${from_name}"
+
+#: ./browser/notifications.py:117
+msgid "poi_email_new_issue_subject_template"
+msgstr "[${tracker_title}] #${issue_id} - nova edição: ${issue_title}"
+
+#: ./browser/notifications.py:84
+msgid "poi_email_new_issue_template"
+msgstr ""
+"Uma nova requisição foi criada no **${tracker_title}**\n"
+"por  **${issue_author}** e aguarda confirmação.\n"
+"\n"
+"Dados da resposta\n"
+"--------------------\n"
+"\n"
+"Ocorrência\n"
+"  ${issue_title} (${issue_url})\n"
+"\n"
+"\n"
+"* Este é um e-mail automático, por favor não o responda - ${from_name}"
+
+#: ./browser/notifications.py:229
+msgid "poi_email_new_response_subject_template"
+msgstr "[${tracker_title}] #${issue_id} - Re: ${issue_title}"
+
+#: ./browser/notifications.py:198
+msgid "poi_email_new_response_template"
+msgstr ""
+"Uma nova resposta para a requisição **${issue_title}**\n"
+"no **${tracker_title}** por **${response_author}**.\n"
+"\n"
+"Dados da resposta\n"
+"--------------------\n"
+"\n"
+"Ocorrência\n"
+"  ${issue_title} (${issue_url})\n"
+"\n"
+"\n"
+"* Este é um e-mail automático, por favor não o responda - ${from_name}"
+
+#: ./skins/Poi/poi_tracker_view.pt:130
+msgid "poi_heading_by_area"
+msgstr "Por área"
+
+#: ./skins/Poi/poi_tracker_view.pt:147
+msgid "poi_heading_by_release"
+msgstr "Por versão"
+
+#: ./skins/Poi/poi_tracker_view.pt:160
+msgid "poi_heading_by_state"
+msgstr "Por situação"
+
+#: ./skins/Poi/poi_tracker_view.pt:184
+msgid "poi_heading_by_tag"
+msgstr "Por rótulo"
+
+#: ./skins/Poi/poi_issue_search_form.pt:19
+msgid "poi_heading_issue_search"
+msgstr "Busca avançada de requisições"
+
+#: ./browser/log.pt:19
+msgid "poi_heading_log"
+msgstr "Log do gerenciador"
+
+#: ./skins/Poi/poi_tracker_view.pt:236
+msgid "poi_heading_my_issues"
+msgstr "Minhas Ocorrências"
+
+#: ./skins/Poi/poi_tracker_view.pt:119
+msgid "poi_heading_open_issues"
+msgstr "Ocorrências abertas"
+
+#: ./skins/Poi/poi_tracker_view.pt:270
+msgid "poi_heading_orphaned_issues"
+msgstr "Ocorrências sem responsável"
+
+#: ./browser/notifications.py:172
+msgid "poi_heading_response_details"
+msgstr "Detalhes da resposta"
+
+#: ./skins/Poi/poi_issue_search.pt:34
+msgid "poi_heading_search_results"
+msgstr "Resultados da busca de requisições"
+
+#: ./skins/Poi/poi_tracker_view.pt:205
+msgid "poi_heading_unconfirmed_issues"
+msgstr "Ocorrências não confirmadas"
+
+#: ./browser/log.pt:21
+msgid "poi_help_log"
+msgstr "Uma visão geral sobre as atividades recentes neste gerenciador"
+
+#: ./skins/Poi/poi_tracker_view.pt:237
+msgid "poi_help_my_issues_manager"
+msgstr "As seguintes requisiçãos abertas ou foram submetidas por você, ou foram designadas para você. Atenção ao fato de que requisiçãos sem um responsável ou não confirmadas também serão listadas, como forma de apresentar as requisiçãos que possam ser de seu interesse."
+
+#: ./skins/Poi/poi_tracker_view.pt:244
+msgid "poi_help_my_issues_not_manager"
+msgstr "As seguintes requisiçãos abertas foram enviadas por você."
+
+#: ./skins/Poi/poi_tracker_view.pt:123
+msgid "poi_help_open_issues"
+msgstr "Escolha uma área, versão ou situação das requisições para ver todas as requisições abertas nessa categoria. Para opções mais avançadas de pesquisa, selecione Busca avançada de requisições."
+
+#: ./skins/Poi/poi_tracker_view.pt:271
+msgid "poi_help_orphaned_issues_"
+msgstr "As seguintes requisiçãos não possuem um responsável definido."
+
+#: ./skins/Poi/poi_tracker_view.pt:206
+msgid "poi_help_unconfirmed_issues"
+msgstr "As requisições seguintes ainda não foram confirmadas ou designadas. Por favor revise-as e tome a ação apropriada."
+
+#: ./skins/Poi/poi_tracker_view.pt:39
+msgid "poi_issue_search"
+msgstr "Busca avançada de requisições"
+
+#: ./skins/Poi/poi_issue_search_form.pt:27
+msgid "poi_issue_search_description"
+msgstr "Este formulário permite que você busque requisiçãos de acordo com uma variedade de critérios. Por favor faça a sua seleção abaixo e clique em Buscar."
+
+#: ./skins/Poi/poi_issue_view.pt:66
+msgid "poi_label_area"
+msgstr "Área "
+
+#: ./browser/response.pt:64
+#: ./skins/Poi/poi_issue_view.pt:168
+msgid "poi_label_attachment"
+msgstr "Anexado:"
+
+#: ./skins/Poi/poi_issue_view.pt:89
+msgid "poi_label_responsible"
+msgstr "Responsável"
+
+#: ./skins/Poi/poi_issue_view.pt:74
+msgid "poi_label_severity"
+msgstr "Gravidade"
+
+#: ./skins/Poi/poi_issue_view.pt:50
+msgid "poi_label_state"
+msgstr "Situação"
+
+#: ./skins/Poi/poi_issue_view.pt:163
+msgid "poi_label_steps"
+msgstr "Passos para Reproduzir:"
+
+#: ./skins/Poi/poi_issue_view.pt:78
+msgid "poi_label_submitted_by"
+msgstr "Submetido por:"
+
+#: ./skins/Poi/poi_issue_view.pt:85
+msgid "poi_label_submitted_on"
+msgstr "Submetido em"
+
+#: ./skins/Poi/poi_issue_view.pt:135
+msgid "poi_label_tags"
+msgstr "Rótulos:"
+
+#: ./skins/Poi/poi_issue_view.pt:103
+msgid "poi_label_target_release"
+msgstr "Versão:"
+
+#: ./skins/Poi/poi_issue_view.pt:70
+msgid "poi_label_type"
+msgstr "Tipo de Ocorrência"
+
+#: ./skins/Poi/poi_issue_view.pt:56
+msgid "poi_label_version"
+msgstr "Versão:"
+
+#: ./skins/Poi/poi_issue_search_form.pt:39
+msgid "poi_legend_search_terms"
+msgstr "Termos de busca"
+
+#: ./skins/Poi/poi_issue_search_form.pt:256
+msgid "poi_match_all_tags"
+msgstr "Coincidir todas as rótulos"
+
+#: ./browser/log.pt:36
+msgid "poi_new_issue_added"
+msgstr "Nova requisição ${name} adicionada por ${author}"
+
+#: ./browser/log.pt:43
+msgid "poi_new_response_added"
+msgstr "${author} adicionou uma nova resposta para ${name}:"
+
+#: ./skins/Poi/poi_issue_search.pt:39
+msgid "poi_return_to_search"
+msgstr "Retorne aos resultados de busca"
+
+#: ./skins/Poi/poi_issue_view.pt:117
+msgid "poi_return_to_search_results"
+msgstr "Voltar para os resultados da pesquisa"
+
+#: ./skins/Poi/poi_issue_search_form.pt:24
+#: ./skins/Poi/poi_issue_view.pt:124
+msgid "poi_return_to_tracker"
+msgstr "Retorne ao gerenciador de requisiçãos"
+
+#: ./skins/Poi/poi_issue_search_form.pt:131
+msgid "poi_search_help_area"
+msgstr "Selecione as áreas que você deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:74
+msgid "poi_search_help_creator"
+msgstr "Informe o nome de usuário do criador da requisição,"
+
+#: ./skins/Poi/poi_issue_search_form.pt:45
+msgid "poi_search_help_id"
+msgstr "Caso queira buscar por uma requisição em particular, por favor informe o número da mesma."
+
+#: ./skins/Poi/poi_issue_search_form.pt:151
+msgid "poi_search_help_issue_type"
+msgstr "Selecione os tipos de requisição que você deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:86
+msgid "poi_search_help_release"
+msgstr "Selecione as versões que você deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:213
+msgid "poi_search_help_responsible"
+msgstr "Selecione os responsáveis que você deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:171
+msgid "poi_search_help_severity"
+msgstr "Selecione as gravidades que você deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:191
+msgid "poi_search_help_state"
+msgstr "Selecione as situações que voce deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:235
+msgid "poi_search_help_tags"
+msgstr "Rótulos são palavras-chave associadas a requisiçãos por administradores do gerenciador para permitir uma organização mais detalhada. Selecione o(s) rótulo(s) que você deseja buscar. "
+
+#: ./skins/Poi/poi_issue_search_form.pt:109
+msgid "poi_search_help_target_release"
+msgstr "Informe o número da versão que você deseja buscar."
+
+#: ./skins/Poi/poi_issue_search_form.pt:60
+msgid "poi_search_help_text"
+msgstr "Informe qualquer texto que você deseje que a requisição inclua."
+
+#: ./skins/Poi/poi_issue_search_form.pt:129
+msgid "poi_search_label_area"
+msgstr "Área"
+
+#: ./skins/Poi/poi_issue_search_form.pt:72
+msgid "poi_search_label_creator"
+msgstr "Criador"
+
+#: ./skins/Poi/poi_issue_search_form.pt:43
+msgid "poi_search_label_id"
+msgstr "Número da requisição"
+
+#: ./skins/Poi/poi_issue_search_form.pt:149
+msgid "poi_search_label_issue_type"
+msgstr "Tipo de Ocorrência"
+
+#: ./skins/Poi/poi_issue_search_form.pt:84
+msgid "poi_search_label_release"
+msgstr "Versão"
+
+#: ./skins/Poi/poi_issue_search_form.pt:211
+msgid "poi_search_label_responsible"
+msgstr "Administradores Responsáveis pelo Gerenciador"
+
+#: ./skins/Poi/poi_issue_search_form.pt:169
+msgid "poi_search_label_severity"
+msgstr "Gravidade"
+
+#: ./skins/Poi/poi_issue_search_form.pt:189
+msgid "poi_search_label_state"
+msgstr "Situação"
+
+#: ./skins/Poi/poi_issue_search_form.pt:233
+msgid "poi_search_label_tags"
+msgstr "Rótulos"
+
+#: ./skins/Poi/poi_issue_search_form.pt:107
+msgid "poi_search_label_target_release"
+msgstr "Versão"
+
+#: ./skins/Poi/poi_issue_search_form.pt:58
+msgid "poi_search_label_text"
+msgstr "Texto da Ocorrência"
+
+#: ./browser/response.pt:102
+msgid "title_add_response"
+msgstr "Adicionar uma resposta"
+
+#: ./browser/edit_response.pt:35
+msgid "title_edit_response"
+msgstr "Editar uma resposta"
+
+#: ./browser/edit_response.pt:24
+msgid "title_error_no_response"
+msgstr "Erro: Nenhuma resposta encontrada para edição"
+
+#: ./skins/Poi/poi_issue_search_results.pt:10
+msgid "title_rss_feed"
+msgstr "Alimentação RSS deste resultado de busca"
+
+#: ./skins/Poi/poi_tracker_view.pt:251
+msgid "title_rss_feed_my_issues"
+msgstr "Alimentação RSS de minhas requisiçãos"
+
+#: ./skins/Poi/poi_tracker_view.pt:279
+msgid "title_rss_feed_orphaned"
+msgstr "Alimentação RSS de requisiçãos sem responsável definido"
+
+#: ./skins/Poi/poi_tracker_view.pt:215
+msgid "title_rss_feed_unconfirmed"
+msgstr "Alimentação RSS de requisiçãos não confirmadas"
