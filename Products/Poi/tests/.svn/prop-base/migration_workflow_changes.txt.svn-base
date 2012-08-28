@@ -1,0 +1,10 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 200
+/Products.Poi/branches/maurits-collective.watcherlist/Products/Poi/tests/migration_workflow_changes.txt:107902-111863
+/Products.Poi/trunk/Products/Poi/tests/migration_workflow_changes.txt:58030-102040
+END
