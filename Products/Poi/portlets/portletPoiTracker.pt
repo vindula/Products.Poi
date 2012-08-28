@@ -1,0 +1,69 @@
+<dl class="portlet" tal:define="view view/data;
+								ignoredStates python:['new'];
+								basicOpenStates python:['open', 'in-progress'];
+                  				openStates python:['unconfirmed'] + basicOpenStates;
+								
+								member python:context.portal_membership.getAuthenticatedMember();
+					  			altenticado python:str(member)!='Anonymous User';"
+								
+								i18n:domain="Poi">
+
+    <dt class="portletHeader">
+        <span class="tile" tal:content="view/get_title">Portlet Title</span>
+    </dt>
+    <dd class="portletItem" >
+		<p>Clique no botão a baixo para criar uma nova requisição</p>		
+			
+		<form id="poi-submit-new-issue-form" method="post" enctype="multipart/form-data"
+			  tal:attributes="action string:${context/portal_url|nothing}${view/get_tracker|nothing}/createObject">
+			
+			<input type="hidden" value="PoiIssue" name="type_name">
+			<div class="formControls">
+				<input type="submit" value="Submeter nova requisição " class="context">
+			</div>
+			
+		</form>
+		
+		<tal:def define="obj view/getObjectPoi|nothing;
+						 issueQueryString python:'%s/poi_issue_search?state=%s' %
+                  								 (obj.absolute_url(), '&amp;state='.join(openStates),);
+						issuefolder obj/@@issuefolder;
+						issueStates obj/getIssueWorkflowStates;
+						ussuesContent obj/objectValues|nothing">
+				  	
+		    <div id="open-issues-by-state" class="issue-quick-search-box"
+		         tal:define="issueStates obj/getIssueWorkflowStates;"
+				 tal:condition="python: ussuesContent and altenticado">
+		      <br />
+			  <h3>Status das requisições</h3>
+		      <ul>
+		        <li tal:define="issues python:issuefolder.getFilteredIssues(state=openStates)">
+		          <a tal:attributes="href string:${issueQueryString}"
+		             i18n:translate="poi_all_pending_issues">All pending issues</a> (<span tal:replace="python:len(issues)" />)
+		        </li>
+		        <tal:releases repeat="state issueStates">
+		          <tal:block condition="python:state not in ignoredStates">
+		            <li tal:define="issues python:issuefolder.getFilteredIssues(state=state);
+									cont_issues python:len(issues) or 0"
+						tal:condition="python: cont_issues !=0">
+		              <a tal:attributes="href string:${obj/absolute_url}/poi_issue_search?state=${state}"
+		                 i18n:translate=""
+		                 i18n:domain="plone"
+		                 tal:content="python:issueStates.getValue(state)" /> (<span tal:replace="python:len(issues)" />)
+		            </li>
+		          </tal:block>
+		        </tal:releases>
+		      </ul>
+		    </div>
+			
+			<div id="open-issues-by-state" class="issue-quick-search-box"
+				 tal:condition="python: not ussuesContent and altenticado">
+		      <br />
+			  <h3>Não a requisições em aberto </h3>
+		      
+		    </div>
+			
+		</tal:def>
+    </dd>
+    <dd class="portletFooter"></dd>
+</dl>

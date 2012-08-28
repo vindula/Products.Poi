@@ -1,0 +1,20 @@
+K 9
+svk:merge
+V 58
+98c0701e-2f07-0410-a1a0-c1bc72243522:/local/Poi/trunk:6437
+K 10
+svn:ignore
+V 13
+
+*.pyc
+*.pyo
+
+K 13
+svn:mergeinfo
+V 316
+/Products.Poi/branches/1.2/Products/Poi:117680,228046
+/Products.Poi/branches/maurits-collective.watcherlist/Products/Poi:107902-111863
+/Products.Poi/branches/maurits-old-responses-cleanup:86628
+/Products.Poi/branches/maurits-old-responses-cleanup/Products/Poi:86612,86628
+/Products.Poi/trunk/Products/Poi:58030-58036
+END
