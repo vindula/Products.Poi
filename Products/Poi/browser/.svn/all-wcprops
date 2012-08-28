@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/browser
+END
+notifications.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/collective/!svn/ver/245127/Products.Poi/trunk/Products/Poi/browser/notifications.py
+END
+response.pt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/146784/Products.Poi/trunk/Products/Poi/browser/response.pt
+END
+tracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/collective/!svn/ver/245122/Products.Poi/trunk/Products/Poi/browser/tracker.py
+END
+log.pt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/collective/!svn/ver/124651/Products.Poi/trunk/Products/Poi/browser/log.pt
+END
+configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/browser/configure.zcml
+END
+edit_response.pt
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/collective/!svn/ver/121063/Products.Poi/trunk/Products/Poi/browser/edit_response.pt
+END
+response.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/browser/response.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/browser/__init__.py
+END
+watchers.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/browser/watchers.py
+END
+log.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/browser/log.py
+END
+interfaces.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/browser/interfaces.py
+END
+poi_mail.pt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/245125/Products.Poi/trunk/Products/Poi/browser/poi_mail.pt
+END
+notifications.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/111864/Products.Poi/trunk/Products/Poi/browser/notifications.zcml
+END

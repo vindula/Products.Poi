@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/profiles/default
+END
+actions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/collective/!svn/ver/101319/Products.Poi/trunk/Products/Poi/profiles/default/actions.xml
+END
+metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/profiles/default/metadata.xml
+END
+types.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/collective/!svn/ver/100261/Products.Poi/trunk/Products/Poi/profiles/default/types.xml
+END
+factorytool.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/collective/!svn/ver/100261/Products.Poi/trunk/Products/Poi/profiles/default/factorytool.xml
+END
+jsregistry.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/profiles/default/jsregistry.xml
+END
+skins.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/collective/!svn/ver/72924/Products.Poi/trunk/Products/Poi/profiles/default/skins.xml
+END
+catalog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/collective/!svn/ver/72924/Products.Poi/trunk/Products/Poi/profiles/default/catalog.xml
+END
+propertiestool.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/collective/!svn/ver/117806/Products.Poi/trunk/Products/Poi/profiles/default/propertiestool.xml
+END
+workflows.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/collective/!svn/ver/100261/Products.Poi/trunk/Products/Poi/profiles/default/workflows.xml
+END
+poi_various.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/collective/!svn/ver/101319/Products.Poi/trunk/Products/Poi/profiles/default/poi_various.txt
+END
+rolemap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/collective/!svn/ver/119326/Products.Poi/trunk/Products/Poi/profiles/default/rolemap.xml
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/content
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/content/__init__.py
+END
+PoiIssue.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/content/PoiIssue.py
+END
+PoiTracker.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/content/PoiTracker.py
+END
+PoiResponse.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/content/PoiResponse.py
+END
