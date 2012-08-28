@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/collective/!svn/ver/112429/Products.Poi/trunk/Products/Poi/profiles/default/types
+END
+PoiIssue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/collective/!svn/ver/112429/Products.Poi/trunk/Products/Poi/profiles/default/types/PoiIssue.xml
+END
+PoiTracker.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/collective/!svn/ver/112429/Products.Poi/trunk/Products/Poi/profiles/default/types/PoiTracker.xml
+END
+PoiPscTracker.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/collective/!svn/ver/112429/Products.Poi/trunk/Products/Poi/profiles/default/types/PoiPscTracker.xml
+END

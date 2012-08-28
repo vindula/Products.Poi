@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi
+END
+permissions.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/collective/!svn/ver/146596/Products.Poi/trunk/Products/Poi/permissions.zcml
+END
+HISTORY.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/HISTORY.txt
+END
+migration.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/migration.py
+END
+TODO.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/collective/!svn/ver/123346/Products.Poi/trunk/Products/Poi/TODO.txt
+END
+configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/collective/!svn/ver/244223/Products.Poi/trunk/Products/Poi/configure.zcml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/__init__.py
+END
+profiles.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/collective/!svn/ver/245400/Products.Poi/trunk/Products/Poi/profiles.zcml
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/collective/!svn/ver/245122/Products.Poi/trunk/Products/Poi/utils.py
+END
+adapters.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/adapters.py
+END
+events.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/events.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/config.py
+END
+rebuild_i18n.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/collective/!svn/ver/125406/Products.Poi/trunk/Products/Poi/rebuild_i18n.sh
+END
+permissions.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/collective/!svn/ver/245124/Products.Poi/trunk/Products/Poi/permissions.py
+END
+version.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/collective/!svn/ver/237311/Products.Poi/trunk/Products/Poi/version.txt
+END
+setuphandlers.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/collective/!svn/ver/101321/Products.Poi/trunk/Products/Poi/setuphandlers.py
+END
+interfaces.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/collective/!svn/ver/111864/Products.Poi/trunk/Products/Poi/interfaces.py
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/collective/!svn/ver/111907/Products.Poi/trunk/Products/Poi/README.txt
+END
