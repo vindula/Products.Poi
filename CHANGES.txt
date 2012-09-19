@@ -28,3 +28,7 @@ Changelog
 1.1.5 - 2012-07-20
 --------------------
 - Correção ortográfica na tradução
+
+1.1.6 - 2012-09-19
+--------------------
+- Correção ticket #204

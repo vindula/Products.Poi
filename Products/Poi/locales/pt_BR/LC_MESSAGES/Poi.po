@@ -74,15 +74,15 @@ msgstr "Informe os tópicos/áreas de requisiçãos para este gerenciador, uma e
 
 #: ./content/PoiTracker.py:136
 msgid "Poi_help_availableIssueTypes"
-msgstr "Informe os tipos de requisiçãos para este gerenciador, uma especificação por linha. O formato é 'NomeCurto | Título | Descrição'. "
+msgstr "Informe os tipos de requisições para este gerenciador, uma especificação por linha. O formato é 'NomeCurto | Título | Descrição'. "
 
 #: ./content/PoiTracker.py:180
 msgid "Poi_help_availableReleases"
-msgstr "Informe as versões as quais as requisiçãos podem ser relacionadas, uma por linha. Se nenhuma versão for informada, as requisição não serão organizadas por versão."
+msgstr "Informe as versões as quais as requisições podem ser relacionadas, uma por linha. Se nenhuma versão for informada, as requisição não serão organizadas por versão."
 
 #: ./content/PoiTracker.py:152
 msgid "Poi_help_availableSeverities"
-msgstr "Informe os valores distintos possíveis para a gravidade das requisiçãos, um por linha."
+msgstr "Informe os valores distintos possíveis para a gravidade das requisições, um por linha."
 
 #: ./content/PoiIssue.py:256
 msgid "Poi_help_contactEmail"
@@ -90,7 +90,7 @@ msgstr "Opcionalmente, informe um endereço de email pelo qual você pode ser en
 
 #: ./content/PoiTracker.py:166
 msgid "Poi_help_defaultSeverity"
-msgstr "Selecione a gravidade padrão para novas requisiçãos."
+msgstr "Selecione a gravidade padrão para novas requisições."
 
 #: ./content/PoiIssue.py:125
 msgid "Poi_help_details"
@@ -119,7 +119,7 @@ msgstr "Se informado, e se \"Enviar emails de notificação\" estiver selecionad
 
 #: ./content/PoiTracker.py:195
 msgid "Poi_help_managers"
-msgstr "Informe a idendificação dos usuários que terão permissão de administrar este gerenciador, um por linha."
+msgstr "Informe a identificação dos usuários que terão permissão de administrar este gerenciador, um por linha."
 
 # ./content/PoiResponse.py
 #: ./browser/response.pt:266
@@ -177,7 +177,7 @@ msgstr "Versão prevista para a correção desta requisição"
 # ./content/PoiTracker.py
 #: ./content/PoiTracker.py:209
 msgid "Poi_help_technicians"
-msgstr "Digite os ids dos usuários que serão responsáveis ​​pela resolução dos problemas, um por linha. Note-se que ter somente gerentes e técnicos não é bom: os gestores podem resolver muitos problemas."
+msgstr "Informe a identificação dos usuários responsáveis ​​pela resolução dos problemas, um por linha. Note-se que ter somente gerentes e técnicos não é bom: os gestores podem resolver muitos problemas."
 
 #: ./content/PoiTracker.py:71
 msgid "Poi_help_tracker_description"
@@ -649,7 +649,7 @@ msgstr "Busca avançada de requisições"
 
 #: ./skins/Poi/poi_issue_search_form.pt:27
 msgid "poi_issue_search_description"
-msgstr "Este formulário permite que você busque requisiçãos de acordo com uma variedade de critérios. Por favor faça a sua seleção abaixo e clique em Buscar."
+msgstr "Este formulário permite que você busque requisições de acordo com uma variedade de critérios. Por favor faça a sua seleção abaixo e clique em Buscar."
 
 #: ./skins/Poi/poi_issue_view.pt:66
 msgid "poi_label_area"
@@ -706,7 +706,7 @@ msgstr "Termos de busca"
 
 #: ./skins/Poi/poi_issue_search_form.pt:256
 msgid "poi_match_all_tags"
-msgstr "Coincidir todas as rótulos"
+msgstr "Coincidir todos os rótulos"
 
 #: ./browser/log.pt:36
 msgid "poi_new_issue_added"
@@ -731,7 +731,7 @@ msgstr "Retorne ao gerenciador de requisiçãos"
 
 #: ./skins/Poi/poi_issue_search_form.pt:131
 msgid "poi_search_help_area"
-msgstr "Selecione as áreas que você deseja buscar."
+msgstr "Selecione as áreas que deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:74
 msgid "poi_search_help_creator"
@@ -743,7 +743,7 @@ msgstr "Caso queira buscar por uma requisição em particular, por favor informe
 
 #: ./skins/Poi/poi_issue_search_form.pt:151
 msgid "poi_search_help_issue_type"
-msgstr "Selecione os tipos de requisição que você deseja buscar."
+msgstr "Selecione os tipos de requisição que deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:86
 msgid "poi_search_help_release"
@@ -755,7 +755,7 @@ msgstr "Selecione os responsáveis que você deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:171
 msgid "poi_search_help_severity"
-msgstr "Selecione as gravidades que você deseja buscar."
+msgstr "Selecione as gravidades que deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:191
 msgid "poi_search_help_state"
@@ -763,7 +763,7 @@ msgstr "Selecione as situações que voce deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:235
 msgid "poi_search_help_tags"
-msgstr "Rótulos são palavras-chave associadas a requisiçãos por administradores do gerenciador para permitir uma organização mais detalhada. Selecione o(s) rótulo(s) que você deseja buscar. "
+msgstr "Rótulos são palavras-chave associadas a requisições por administradores do gerenciador para permitir uma organização mais detalhada. Selecione o(s) rótulo(s) que deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:109
 msgid "poi_search_help_target_release"
@@ -771,7 +771,7 @@ msgstr "Informe o número da versão que você deseja buscar."
 
 #: ./skins/Poi/poi_issue_search_form.pt:60
 msgid "poi_search_help_text"
-msgstr "Informe qualquer texto que você deseje que a requisição inclua."
+msgstr "Informe qualquer texto que esteja incluído na requisição."
 
 #: ./skins/Poi/poi_issue_search_form.pt:129
 msgid "poi_search_label_area"

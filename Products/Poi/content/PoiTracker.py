@@ -440,7 +440,7 @@ class PoiTracker(atapi.BaseBTreeFolder, BrowserDefaultMixin):
             if member is None:
                 not_found.append(user_id)
         if not_found:
-            return "The following user ids could not be found: %s" % \
+            return "Os ids de usuários a seguir não foram encontrados: %s" % \
                 ','.join(not_found)
 
     def validate_managers(self, value):
