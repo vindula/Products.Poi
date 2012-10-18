@@ -99,7 +99,7 @@ msgstr "Por favor, informe detalhes adicionais."
 # ./content/PoiTracker.py
 #: ./content/PoiTracker.py:87
 msgid "Poi_help_helpText"
-msgstr "Digite uma mensagem introdutória a ser exibida na página inicial do gerenciador de requisiçãos."
+msgstr "Digite uma mensagem introdutória a ser exibida na página inicial do gerenciador de requisições."
 
 #: ./browser/response.pt:176
 msgid "Poi_help_issueTransition"
