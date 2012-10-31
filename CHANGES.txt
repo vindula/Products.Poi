@@ -36,3 +36,8 @@ Changelog
 1.1.7 - 2012-10-18
 --------------------
 - Correção ortográfica na descrição de Texto de Ajuda
+
+
+1.1.8 - 2012-10-31
+--------------------
+- Correção da busca avança de tickets

@@ -32,7 +32,7 @@ class IssueFolderView(BrowserView):
             criteria = kwargs
         else:
             criteria = dict(criteria)
-
+        
         allowedCriteria = {
             'release': 'getRelease',
             'area': 'getArea',
@@ -53,9 +53,11 @@ class IssueFolderView(BrowserView):
 
         for k, v in allowedCriteria.items():
             if k in criteria:
-                query[v] = criteria[k]
+                if criteria[k]:
+                    query[v] = criteria[k]
             elif v in criteria:
-                query[v] = criteria[v]
+                if criteria[v]:
+                    query[v] = criteria[v]
 
         # Playing nicely with the form.
 
