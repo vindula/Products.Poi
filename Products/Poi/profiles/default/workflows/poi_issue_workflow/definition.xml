@@ -172,103 +172,120 @@
   </permission-map>
  </state>
  <transition transition_id="accept-unconfirmed" title="Open" new_state="open" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Open</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=accept-unconfirmed"
+          category="workflow" icon="">Open</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="begin-open" title="Begin work" new_state="in-progress" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Begin work</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=begin-open"
+          category="workflow" icon="">Begin work</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="confirm-resolved" title="Confirm resolved" new_state="closed" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Confirm resolved</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=close"
+          category="workflow" icon="">Confirm resolved</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="hold-open" title="Put on hold" new_state="postponed" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Put on hold</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=hold-open"
+          category="workflow" icon="">Put on hold</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="open-closed" title="Re-open" new_state="open" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Re-open</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=close"
+          category="workflow" icon="">Re-open</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="open-postponed" title="Re-open" new_state="open" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Re-open</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=open-postponed"
+          category="workflow" icon="">Re-open</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="open-rejected" title="Open" new_state="open" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Open</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=open-rejected"
+          category="workflow" icon="">Open</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="open-resolved" title="Re-open" new_state="open" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Re-open</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=open-resolved"
+          category="workflow" icon="">Re-open</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="post" title="Post issue on save" new_state="unconfirmed" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Post issue on save</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=post"
+          category="workflow" icon="">Post issue on save</action>
   <guard>
    <guard-expression>here/isValid</guard-expression>
   </guard>
  </transition>
  <transition transition_id="postpone" title="Postpone" new_state="postponed" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Postpone</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=close"
+          category="workflow" icon="">Postpone</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="postpone-unconfirmed" title="Postpone" new_state="postponed" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Postpone</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=close"
+          category="workflow" icon="">Postpone</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="re-start" title="Begin work" new_state="in-progress" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Begin work</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=re-start"
+          category="workflow" icon="">Begin work</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="reject-open" title="Reject" new_state="rejected" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Reject</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=reject-open"
+          category="workflow" icon="">Reject</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="reject-unconfirmed" title="Reject" new_state="rejected" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Reject</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=reject-unconfirmed"
+          category="workflow" icon="">Reject</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="resolve-in-progress" title="Resolve" new_state="resolved" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Resolve</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=close"
+          category="workflow" icon="">Resolve</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="resolve-open" title="Resolve" new_state="resolved" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Resolve</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=resolve-open"
+          category="workflow" icon="">Resolve</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>
  </transition>
  <transition transition_id="resolve-unconfirmed" title="Resolve immediately" new_state="resolved" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Resolve immediately</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=resolve-unconfirmed"
+          category="workflow" icon="">Resolve immediately</action>
   <guard>
    <guard-permission>Poi: Modify issue state</guard-permission>
   </guard>

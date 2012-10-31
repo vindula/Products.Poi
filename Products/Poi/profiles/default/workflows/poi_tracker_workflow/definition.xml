@@ -220,7 +220,8 @@
   </permission-map>
  </state>
  <transition transition_id="close" title="Close tracker" new_state="closed" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Close tracker</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=close"
+         category="workflow" icon="">Close tracker</action>
   <guard>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>
@@ -228,7 +229,8 @@
   </guard>
  </transition>
  <transition transition_id="open" title="Open tracker" new_state="open" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Open tracker</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=open"
+          category="workflow" icon="">Open tracker</action>
   <guard>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>
@@ -236,7 +238,8 @@
   </guard>
  </transition>
  <transition transition_id="protect" title="Protected tracker against anonymous views" new_state="protected" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Protect tracker</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=protect"
+          category="workflow" icon="">Protect tracker</action>
   <guard>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>
@@ -244,7 +247,8 @@
   </guard>
  </transition>
  <transition transition_id="restrict" title="Restrict tracker" new_state="restricted" trigger="USER" before_script="" after_script="">
-  <action url="" category="workflow" icon="">Restrict tracker</action>
+  <action url="%(content_url)s/content_status_modify?workflow_action=restrict"
+          category="workflow" icon="">Restrict tracker</action>
   <guard>
    <guard-role>Manager</guard-role>
    <guard-role>Owner</guard-role>

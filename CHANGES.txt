@@ -41,3 +41,4 @@ Changelog
 1.1.8 - 2012-10-31
 --------------------
 - Correção da busca avança de tickets
+- Correção do workflow para recaregar a pagina
