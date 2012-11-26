@@ -46,3 +46,7 @@ Changelog
 1.1.9 - 2012-11-05
 --------------------
 - Ajuste para usuário visualizasse apenas as ocorrências abertas por ele
+
+1.1.10 - 2012-11-26
+--------------------
+- Ajuste no tamanho do botão 'Submeter nova requisição'

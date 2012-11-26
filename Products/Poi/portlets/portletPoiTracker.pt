@@ -32,7 +32,7 @@
 			
 			<input type="hidden" value="PoiIssue" name="type_name">
 			<div class="formControls">
-				<input type="submit" value="Submeter nova requisição " class="context" style="width: 170px;">
+				<input type="submit" value="Submeter nova requisição " class="context" style="width: 180px;">
 			</div>
 			
 		</form>
