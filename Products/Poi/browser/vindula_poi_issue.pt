@@ -1,0 +1,181 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="pt-br"
+      i18n:domain="Poi">
+    
+	<head tal:define="plone_view context/@@plone;">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+
+        <div tal:replace="structure provider:plone.htmlhead" />
+        <link tal:replace="structure provider:plone.htmlhead.links" />
+
+        <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+
+		<style type="text/css">
+			body{
+				background:none;
+			}
+			
+			
+		</style>
+    </head>
+    <body>
+    	
+		<div metal:use-macro="context/global_statusmessage/macros/portal_message">
+         Status message
+        </div>
+		
+    	<div id="content">
+    		
+			<div id="viewlet-above-content-title" tal:content="structure provider:plone.abovecontenttitle" />
+			<h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
+	             Generic KSS Title. Is rendered with class="documentFirstHeading".
+	        </h1>
+			
+            <div id="viewlet-below-content-title" tal:content="structure provider:plone.belowcontenttitle" />
+            <div metal:use-macro="context/kss_generic_macros/macros/generic_description_view">
+                Generic KSS Description. Is rendered with class="documentDescription".
+            </div>
+			
+            <div id="viewlet-above-content-body" tal:content="structure provider:plone.abovecontentbody" />
+	
+	        <div id="content-core" tal:define="dummp view/default;
+											   errors view/errors">
+			    <form action="." name="poi_issue" method="post" enctype="multipart/form-data"
+				 	  tal:attributes="action string:${context/absolute_url}/vindula_poi_issue">
+					<fieldset>
+		            	<legend>Informações gerais</legend>
+							
+		                <!-- title --> 
+						<div class="field" tal:attributes="class python: view.field_class(errors, 'title')">
+							<label for="title">Título</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>
+		                	<div class="formHelp">Informe um título curto e descritivo para a requisição.
+								 Um bom título facilitará a identificação e resposta da requisição pelo responsável pelo projeto.</div>
+							<div tal:content="errors/title|nothing"></div> 
+		                	<input id="title" type="text" value="" 
+								name="title" size="25" tal:attributes="value request/title|nothing">
+		                </div>	
+					
+		                <!-- Descrição --> 
+						<div class="field" tal:attributes="class python: view.field_class(errors, 'details')">
+							<label for="details">Detalhes</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>
+		                	<div class="formHelp">Por favor, informe detalhes adicionais.</div>
+							<div tal:content="errors/details|nothing"></div> 
+		                	<textarea id="details" rows="25" cols="80" name="details" tal:content="request/details|nothing"> </textarea>
+		                </div>	
+						
+						<!-- Anexo --> 
+						<div class="field" tal:attributes="class python: view.field_class(errors, 'attachment')">
+							<label for="attachment">Anexo</label>
+		                	<div class="formHelp">Anexe um documento a este cadastro.</div>
+							<div tal:content="errors/attachment|nothing"></div> 
+		                	<input id="attachment" type="file" value="" name="attachment" size="25" tal:attributes="value request/attachment|nothing">
+		                </div>	
+						
+						
+					    <!-- Area --> 
+						<div class="field" tal:define="areas view/getAreasVocab|python:[]" tal:attributes="class python: view.field_class(errors, 'area')">
+							<label for="area">Área</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>
+		                	<div class="formHelp">Selecione a área a qual esta requisição se refere.</div>
+							<div tal:content="errors/area|nothing"></div> 
+		                	<tal:repeat repeat="area areas"  tal:define="id_request request/area | python:''">
+		                		<input id="area_1" class="noborder blurrable" type="radio" value="ui" name="area"
+								 	  tal:attributes="id string:area${repeat/area/number};
+									  			  	  value area/id;
+													  checked python: str(id_request)==str(area.get('id')) and 'checked' or default"">
+								<label for="area_1" tal:attributes="id string:area${repeat/area/number};"
+													tal:content="area/label">Interface do usuário</label>
+								<br>
+								
+		                	</tal:repeat>
+							
+		                </div>		
+						
+						<!-- Tipo da Ocorrência --> 
+						<div class="field" tal:define="Issuetypes view/getIssueTypesVocab|python:[]" tal:attributes="class python: view.field_class(errors, 'issueType')">
+							<label for="issueType">Tipo da Ocorrência</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>
+		                	<div class="formHelp">Selecione o tipo de requisição.</div>
+		                	<div tal:content="errors/issueType|nothing"></div> 
+							<tal:repeat repeat="iten Issuetypes"  tal:define="id_request request/issueType | python:''">
+		                		<input id="issueType_1" class="noborder blurrable" type="radio" value="ui" name="issueType"
+									   tal:attributes="id string:issueType${repeat/iten/number};
+									   				   value iten/id;
+													   checked python: str(id_request)==str(iten.get('id')) and 'checked' or default"">
+								<label for="issueType_1" tal:attributes="id string:issueType${repeat/iten/number};"
+													tal:content="iten/label">Interface do usuário</label>
+								<br>
+								
+		                	</tal:repeat>
+							
+		                </div>
+						
+						<!-- Gravidade --> 
+						<div class="field"  tal:define="severitys view/getAvailableSeverities|python:[]" tal:attributes="class python: view.field_class(errors, 'severity')">
+							<label for="severity">Gravidade</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>
+		                	<div class="formHelp">Selecione a gravidade desta requisição.</div>
+							<div tal:content="errors/severity|nothing"></div> 
+							<tal:repeat repeat="iten severitys" tal:define="id_request request/severity | python:''">
+		                		<input id="issueType_1" class="noborder blurrable" type="radio" value="ui" name="severity"
+									   tal:attributes="id string:issueType${repeat/iten/number};
+									   				   value iten/id;
+													   checked python: str(id_request)==str(iten.get('id')) and 'checked' or default">
+								<label for="issueType_1" tal:attributes="id string:issueType${repeat/iten/number};"
+													tal:content="iten/label">Interface do usuário</label>
+								<br>
+								
+		                	</tal:repeat>
+		                </div>
+						
+						<!--  Responsável -->
+						<div class="field" tal:define="manages view/getManagersVocab" tal:attributes="class python: view.field_class(errors, 'responsibleManager')">
+							<label for="responsibleManager">Responsável</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>	
+		                	<div class="formHelp">Selecione qual o gerente, se existir, é responsável por esta requisição.</div>
+							<div tal:content="errors/frequencia_id|nothing"></div>
+		                    <select name="responsibleManager" tal:define="id_request request/responsibleManager | python:''">
+		                    	<option value="">-- Ninguém --</option>
+		                        <tal:repeat repeat="manage manages">
+						           	<option value=""
+											tal:content="manage/label" 
+											tal:attributes="value manage/id | nothing;
+															selected python: str(id_request)==str(manage.get('id')) or default"></option>
+								</tal:repeat>
+		                    </select>	
+		                </div>
+						
+						<!-- Email para Contato --> 
+						<div class="field" tal:attributes="class python: view.field_class(errors, 'contactEmail')">
+							<label for="contactEmail">Email para Contato</label>
+							<span class="fieldRequired" title="Obrigatório">(Obrigatório)</span>
+		                	<div class="formHelp">Opcionalmente, informe um endereço de email pelo qual você 
+												  pode ser encontrado para informações adicionais ou quando uma solução estiver disponível.</div>
+							<div tal:content="errors/contactEmail|nothing"></div> 
+		                	<input id="contactEmail" type="text" value="" 
+								name="contactEmail" size="25" tal:attributes="value request/contactEmail|nothing">
+		                </div>	
+						
+						<!-- Botões de ação -->	
+					   	<fieldset>
+				            <legend>Ações</legend>		
+							<div style="float:left; width:100%">
+								<input style="width:100px" class="button-erp" type="submit" value="Salvar" name="form.submited">	
+							</div>
+						</fieldset>
+						
+							
+					</fieldset>
+				</form>		    
+		    </div>
+		</div>
+	</body>
+</html>

@@ -1,5 +1,6 @@
 <configure
    xmlns="http://namespaces.zope.org/five"
+   xmlns:grok="http://namespaces.zope.org/grok"
    xmlns:browser="http://namespaces.zope.org/browser">
 
   <include file="notifications.zcml" />
@@ -92,5 +93,16 @@
      permission="zope2.View"
      class=".response.Download"
      />
+
+  <browser:page
+     name="vindula_poi_issue"
+     for="Products.Poi.interfaces.ITracker"
+     permission="zope2.View"
+	 template="vindula_poi_issue.pt"
+     class=".page.CreateIssue"
+     />
+  
+  <!-- Grok the package to initialise schema interfaces and content classes -->
+  <grok:grok package="." />
 
 </configure>
