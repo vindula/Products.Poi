@@ -17,11 +17,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
 
 		<style type="text/css">
-			body{
-				background:none;
-			}
-			
-			
+			body{ background:none; }
 		</style>
     </head>
     <body>
@@ -90,7 +86,7 @@
 		                		<input id="area_1" class="noborder blurrable" type="radio" value="ui" name="area"
 								 	  tal:attributes="id string:area${repeat/area/number};
 									  			  	  value area/id;
-													  checked python: str(id_request)==str(area.get('id')) and 'checked' or default"">
+													  checked python: str(id_request)==str(area.get('id')) and 'checked' or default">
 								<label for="area_1" tal:attributes="id string:area${repeat/area/number};"
 													tal:content="area/label">Interface do usuário</label>
 								<br>
@@ -109,7 +105,7 @@
 		                		<input id="issueType_1" class="noborder blurrable" type="radio" value="ui" name="issueType"
 									   tal:attributes="id string:issueType${repeat/iten/number};
 									   				   value iten/id;
-													   checked python: str(id_request)==str(iten.get('id')) and 'checked' or default"">
+													   checked python: str(id_request)==str(iten.get('id')) and 'checked' or default">
 								<label for="issueType_1" tal:attributes="id string:issueType${repeat/iten/number};"
 													tal:content="iten/label">Interface do usuário</label>
 								<br>

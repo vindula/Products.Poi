@@ -7,13 +7,9 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from AccessControl.SecurityManagement import newSecurityManager, getSecurityManager, setSecurityManager
 from zope.component import getUtility
 from plone.i18n.normalizer.interfaces import IIDNormalizer
-
+from Products.statusmessages.interfaces import IStatusMessage
 
 from Products.Poi import PoiMessageFactory as _
-
-
-
-
 
 
 class CreateIssue(BrowserView):
@@ -96,6 +92,7 @@ class CreateIssue(BrowserView):
     def createIssue(self, form):
         tracker = self.getTracker()
         nome = form.get('title')
+        cliente_obj = tracker.aq_parent
         
         count = 0
         normalizer = getUtility(IIDNormalizer)
@@ -106,7 +103,9 @@ class CreateIssue(BrowserView):
             nome_arquivo = nome_org + '-' + str(count) 
 
         portal_member = self.context.portal_membership
-        user_admin = portal_member.getMemberById('admin')  
+        
+        super_user = cliente_obj.getUsuarioSistema()
+        user_admin = portal_member.getMemberById(super_user)  
          
         # stash the existing security manager so we can restore it
         old_security_manager = getSecurityManager()
@@ -151,10 +150,11 @@ class CreateIssue(BrowserView):
             if not self.errors:
                 obj = self.createIssue(form)
                 
-                url = obj.absolute_url()
-                self.request.set('ajax_load',True)
-                self.request.set('ajax_include_head',True)
+                url = obj.aq_parent.absolute_url()+'/vindula_poi_issue'
+#                self.request.set('ajax_load',True)
+#                self.request.set('ajax_include_head',True)
                 
+                IStatusMessage(self.request).addStatusMessage(_(u"Obrigado, o seu ticket foi criado com sucesso."), "info")
                 self.request.response.redirect(url, lock=True)
             
         return ''
