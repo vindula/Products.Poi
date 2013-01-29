@@ -8,6 +8,7 @@ from AccessControl.SecurityManagement import newSecurityManager, getSecurityMana
 from zope.component import getUtility
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from Products.statusmessages.interfaces import IStatusMessage
+from Products.CMFCore.utils import getToolByName
 
 from Products.Poi import PoiMessageFactory as _
 
@@ -128,6 +129,11 @@ class CreateIssue(BrowserView):
         tracker.invokeFactory(**objeto)   
 
         obj = tracker.get(nome_arquivo,'')
+        
+        #Muda o status do ticket para aberto
+        portal = tracker.context.portal_url.getPortalObject()
+        portal_workflow = getToolByName(portal, 'portal_workflow')
+        portal_workflow.doActionFor(folder_data, 'post')
 
         # restore the original context
         setSecurityManager(old_security_manager)     
