@@ -126,19 +126,18 @@ class CreateIssue(BrowserView):
                    }
          
          
-        tracker.invokeFactory(**objeto)   
-
-        obj = tracker.get(nome_arquivo,'')
+        issue_created = tracker.invokeFactory(**objeto)   
+        issue_created = tracker.get(issue_created, '')
         
         #Muda o status do ticket para aberto
-        portal = tracker.context.portal_url.getPortalObject()
+        portal = tracker.portal_url.getPortalObject()
         portal_workflow = getToolByName(portal, 'portal_workflow')
-        portal_workflow.doActionFor(folder_data, 'post')
+        portal_workflow.doActionFor(issue_created, 'post')
 
         # restore the original context
         setSecurityManager(old_security_manager)     
 
-        return obj
+        return issue_created
 
 
     def default(self):
