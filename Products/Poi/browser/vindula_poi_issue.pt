@@ -26,7 +26,7 @@
          Status message
         </div>
 		
-    	<div id="content">
+    	<div id="content" ta>
     		
 			<div id="viewlet-above-content-title" tal:content="structure provider:plone.abovecontenttitle" />
 			<h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
@@ -41,7 +41,8 @@
             <div id="viewlet-above-content-body" tal:content="structure provider:plone.abovecontentbody" />
 	
 	        <div id="content-core" tal:define="dummp view/default;
-											   errors view/errors">
+											   errors view/errors"
+									tal:condition="view/authorized">
 			    <form action="." name="poi_issue" method="post" enctype="multipart/form-data"
 				 	  tal:attributes="action string:${context/absolute_url}/vindula_poi_issue">
 					<fieldset>
@@ -171,6 +172,13 @@
 							
 					</fieldset>
 				</form>		    
+		    </div>
+		    <div id="content-core" tal:condition="not: view/authorized">
+		    	
+  					<h1>Seu Plano não tem esta funcionalidade</h1>
+				<br />				
+				<h1>Contate o suporte vindula</h1>
+		    
 		    </div>
 		</div>
 	</body>

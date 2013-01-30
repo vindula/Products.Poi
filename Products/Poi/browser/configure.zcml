@@ -96,7 +96,7 @@
 
   <browser:page
      name="vindula_poi_issue"
-     for="Products.Poi.interfaces.ITracker"
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
      permission="zope2.View"
 	 template="vindula_poi_issue.pt"
      class=".page.CreateIssue"

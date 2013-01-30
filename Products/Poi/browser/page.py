@@ -12,6 +12,7 @@ from Products.CMFCore.utils import getToolByName
 
 from Products.Poi import PoiMessageFactory as _
 
+from vindula.network.browser.utils import ToolBox
 
 class CreateIssue(BrowserView):
 
@@ -26,17 +27,48 @@ class CreateIssue(BrowserView):
               return 'field'
 
     def getTracker(self):
-        return self.context
+        #return self.context
+        self.tool = ToolBox(self)
+        portal_membership = self.tool.membership
+        
+        key = self.request.form.get('key','')
+        
+        query = {}
+        obj = None
+        user_admin = portal_membership.getMemberById('admin')  
+        
+        # stash the existing security manager so we can restore it
+        old_security_manager = getSecurityManager()
+        
+        # create a new context, as the owner of the folder
+        newSecurityManager(self.request,user_admin)
+        
+        query['portal_type'] = ['ClienteNetwork']
+        items = self.tool.busca_catalog(**query)
+        for item in items:
+            item = item.getObject()
+            if item.getChaveVindula() == key:
+                poi = item.getFolderContents(contentFilter={'portal_type' : 'PoiTracker'})
+                if poi:
+                    obj = poi[0].getObject()
+        
+        # restore the original context
+        setSecurityManager(old_security_manager)  
+        
+        return obj
+        
+        
 
     def getAreasVocab(self):
         """
         Get the available areas as a DispayList.
         """
         tracker = self.getTracker()
+        L = []
         field = tracker.getField('availableAreas')
         area = field.getAsDisplayList(tracker)
 
-        L = []
+        
         for iten in area:
             L.append({'id':iten,'label':area.getValue(iten)})
         
@@ -143,6 +175,11 @@ class CreateIssue(BrowserView):
     def default(self):
         self.errors = {}
         form = self.request.form
+        self.authorized = True
+        
+        if not self.getTracker():
+            self.authorized = False
+        
         
         campos = ['title','details','area','issueType',
                   'severity','contactEmail'] #'responsibleManager',
