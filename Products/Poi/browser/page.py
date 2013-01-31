@@ -192,7 +192,7 @@ class CreateIssue(BrowserView):
             if not self.errors:
                 obj = self.createIssue(form)
                 
-                url = obj.aq_parent.absolute_url()+'/vindula_poi_issue'
+                url = obj.portal_url()+'/vindula_poi_issue'
 #                self.request.set('ajax_load',True)
 #                self.request.set('ajax_include_head',True)
                 
