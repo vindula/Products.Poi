@@ -197,6 +197,7 @@ class CreateIssue(BrowserView):
 #                self.request.set('ajax_include_head',True)
                 
                 IStatusMessage(self.request).addStatusMessage(_(u"Obrigado, o seu ticket foi criado com sucesso."), "info")
+                self.request.form['key'] = form.get('key')
                 self.request.response.redirect(url, lock=True)
             
         return ''
