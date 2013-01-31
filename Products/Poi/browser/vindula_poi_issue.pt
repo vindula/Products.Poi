@@ -47,6 +47,11 @@
 				 	  tal:attributes="action string:${context/absolute_url}/vindula_poi_issue">
 					<fieldset>
 		            	<legend>Informações gerais</legend>
+						
+						<!-- Key -->
+						<input id="key" type="hidden" value="" 
+								name="key" size="25" tal:attributes="value request/key|nothing">
+						
 							
 		                <!-- title --> 
 						<div class="field" tal:attributes="class python: view.field_class(errors, 'title')">
