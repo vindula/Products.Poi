@@ -15,6 +15,14 @@ from Products.Poi import PoiMessageFactory as _
 from vindula.network.browser.utils import ToolBox
 
 class CreateIssue(BrowserView):
+    
+    index = ViewPageTemplateFile("vindula_poi_issue.pt")
+    
+    def __call__(self):
+        self.request.set('ajax_include_head',True)
+        self.request.set('ajax_load',True)
+        
+        return self.index()
 
     # define se aparece ou nao as mensagens e marcacoes de erros  
     def field_class(self, errors, field_name):
@@ -176,7 +184,7 @@ class CreateIssue(BrowserView):
         self.errors = {}
         form = self.request.form
         self.authorized = True
-        
+
         if not self.getTracker():
             self.authorized = False
         

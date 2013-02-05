@@ -3,22 +3,25 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="pt-br"
+      metal:use-macro="context/main_template/macros/master"
       i18n:domain="Poi">
     
 	<head tal:define="plone_view context/@@plone;">
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+		
+		<!--
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
 
-        <div tal:replace="structure provider:plone.htmlhead" />
+        <!--div tal:replace="structure provider:plone.htmlhead" />
         <link tal:replace="structure provider:plone.htmlhead.links" />
 
-        <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+        <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" /-->
 
-		<style type="text/css">
-			body{ background:none; }
-		</style>
+		<metal:block fill-slot="top_slot">
+            <tal:dummy tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);
+                                   disable_column_two python:request.set('disable_plone.rightcolumn',1);" />
+        </metal:block>
     </head>
     <body>
     	
@@ -26,20 +29,7 @@
          Status message
         </div>
 		
-    	<div id="content" ta>
-    		
-			<div id="viewlet-above-content-title" tal:content="structure provider:plone.abovecontenttitle" />
-			<h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">
-	             Generic KSS Title. Is rendered with class="documentFirstHeading".
-	        </h1>
-			
-            <div id="viewlet-below-content-title" tal:content="structure provider:plone.belowcontenttitle" />
-            <div metal:use-macro="context/kss_generic_macros/macros/generic_description_view">
-                Generic KSS Description. Is rendered with class="documentDescription".
-            </div>
-			
-            <div id="viewlet-above-content-body" tal:content="structure provider:plone.abovecontentbody" />
-	
+		<metal:main fill-slot="main" >
 	        <div id="content-core" tal:define="dummp view/default;
 											   errors view/errors"
 									tal:condition="view/authorized">
@@ -180,11 +170,11 @@
 		    </div>
 		    <div id="content-core" tal:condition="not: view/authorized">
 		    	
-  					<h1>Seu Plano não tem esta funcionalidade</h1>
+						<h1>Seu Plano não tem esta funcionalidade</h1>
 				<br />				
 				<h1>Contate o suporte vindula</h1>
 		    
 		    </div>
-		</div>
+		</metal:main>
 	</body>
 </html>
