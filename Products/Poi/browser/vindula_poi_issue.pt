@@ -29,7 +29,10 @@
          Status message
         </div>
 		
-		<metal:main fill-slot="main" >
+		<metal:main fill-slot="main"
+					tal:define="dummp view/default;
+				  				errors view/errors;">
+				  					
 			<div id="content-core">
 				<br />
 				
@@ -39,9 +42,7 @@
 					<h1>Contate o suporte vindula</h1>
 			    </div>
 				
-				<tal:cond condition="view/authorized"
-						  define="dummp view/default;
-								  errors view/errors">
+				<tal:cond condition="view/authorized">
 										
 				    <form action="." name="poi_issue" method="post" enctype="multipart/form-data"
 					 	  tal:attributes="action string:${context/absolute_url}/vindula_poi_issue">
