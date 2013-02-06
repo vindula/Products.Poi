@@ -21,6 +21,7 @@ class CreateIssue(BrowserView):
     def __call__(self):
         self.request.set('ajax_include_head',True)
         self.request.set('ajax_load',True)
+        self.tool = ToolBox(self)
         
         return self.index()
 
@@ -187,7 +188,8 @@ class CreateIssue(BrowserView):
 
         if not self.getTracker():
             self.authorized = False
-        
+            obj = self.tool.getNoFeaturePage()
+            self.page_nofeature = obj
         
         campos = ['title','details','area','issueType',
                   'severity','contactEmail'] #'responsibleManager',

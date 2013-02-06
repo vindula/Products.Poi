@@ -36,10 +36,10 @@
 			<div id="content-core">
 				<br />
 				
-				<div class="minHeight520 textCenter" tal:condition="not: view/authorized">
-					<h1>Seu Plano não tem esta funcionalidade</h1>
+				<div class="minHeight520" tal:condition="not: view/authorized">
+					<h1 class="textCenter" tal:content="view/page_nofeature/title|nothing">Seu Plano não tem esta funcionalidade</h1>
 					<br />				
-					<h1>Contate o suporte vindula</h1>
+					<span tal:content="structure view/page_nofeature/getText|nothing">Contate o suporte vindula</span>
 			    </div>
 				
 				<tal:cond condition="view/authorized">
