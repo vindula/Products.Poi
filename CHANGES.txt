@@ -45,8 +45,66 @@ Changelog
 
 1.1.9 - 2012-11-05
 --------------------
-- Ajuste para usuário visualizasse apenas as ocorrências abertas por ele
+ - Ajuste para usuário visualizasse apenas as ocorrências abertas por ele
 
 1.1.10 - 2012-11-26
 --------------------
-- Ajuste no tamanho do botão 'Submeter nova requisição'
+ - Ajuste no tamanho do botão 'Submeter nova requisição'
+
+Jan 10 16:22:10 2013 
+--------------------
+ -  : Criação da view parar criar ticket
+
+Jan 18 15:38:39 2013
+--------------------
+ -  : Ajustes na view de criar ticket pelo iframe do Vindula NET
+
+Jan 29 17:11:04 
+--------------------
+ -  : Mudança do status do ticket
+
+Jan 30 11:25:15 2013
+--------------------
+ -  : Bug Fix
+
+Jan 30 14:43:48 2013
+--------------------
+ -  : CRiação da view de CRiação do ticket
+
+Jan 31 15:14:30 2013
+--------------------
+ -  : Ajustes cria ticket
+
+Jan 31 15:21:04 2013
+ --------------------
+ -  : Ajustes cria ticket
+
+Jan 31 15:26:04 2013
+--------------------
+ -  : Correção do redirect de criar ticket
+
+Jan 31 15:31:00 2013
+--------------------
+ -  : Correção do redirect de criar ticket
+
+Feb 5 10:01:37 2013
+--------------------
+ -  : Mudanca no layout da view de adicionar novo ticket da barra do Network
+
+Feb 5 11:20:49 2013
+--------------------
+-  : Ajustes na view de abrir novo ticket no Vindula Network
+
+Feb 5 11:50:05 2013
+--------------------
+-  : Ajustes na view de abrir novo ticket pelo vindula network
+
+Feb 6 11:47:33 2013 
+--------------------
+-  : Adicionada a funcionalidade de customizar o texto do vindula net quando o usuario nao tem acesso a func
+
+May 27 09:23:50 2013
+--------------------
+-  : Remoção da dependencia do vindula.network
+
+
